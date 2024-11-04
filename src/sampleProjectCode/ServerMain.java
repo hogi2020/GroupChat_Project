@@ -10,21 +10,25 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Vector;
 
 public class ServerMain extends JFrame implements ActionListener {
     // 선언부
+    ServerThread st = null;
+    List<ServerThread> stl = null;
     Socket clientSocket;
     ServerDataMng sdm;
-    List<ServerThread> globalList 	= null;
 
     //서버로그 보여주는 창 선언
     JTextArea jta_log = new JTextArea(10,50); //서버 로그를 보여주는 창
     JScrollPane jsp_log = new JScrollPane(jta_log, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER); //서버 로그가 많아 지면 스크롤한다.
     JPanel jp_north = new JPanel();
     JButton jbtn_log = new JButton("저장");
+    String log_save = "src\\Log\\";
 
     // 서버 실행 및 클라이언트 접속
     public void ServerStart() {
+        stl = new Vector<>();
         try(ServerSocket ss = new ServerSocket(3000)) {
             System.out.println("Ready to Server.....");
 
@@ -37,7 +41,7 @@ public class ServerMain extends JFrame implements ActionListener {
                 System.out.println("클라이언트 접속 | " + clientSocket.getInetAddress());
 
                 // ServerThread 클래스의 run()스레드 생성
-                new Thread(new ServerThread(clientSocket, sdm)).start();
+                new Thread(new ServerThread(clientSocket, sdm, this)).start();
             }
         } catch (IOException e) {
             System.out.println("서버 작동 중 오류 발생: " + e.getMessage());
@@ -52,10 +56,10 @@ public class ServerMain extends JFrame implements ActionListener {
             public void actionPerformed(ActionEvent je) {
                 Object obj = je.getSource();
                 if (obj == jbtn_log){
-                    String fileNeame = "log_" + setTimer() + ",txt"; //로그 저장
-                    System.out.println(fileNeame); //저장된 파일이름 보여주기.
+                    String fileName = "log_" + setTimer() + ",txt"; //로그 저장
+                    System.out.println(fileName); //저장된 파일이름 보여주기.
                     try{
-                        File f = new File(fileNeame);
+                        File f = new File(fileName);
                         PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(f.getAbsolutePath())));
                         /*
                         버퍼라이터 - 문자 출력 스트림을 버퍼에 저장하고, 버퍼가 가득 차거나 명시적으로 flush() 메서드가 호출될 때 실제로 파일에 데이터를 씁니다.
@@ -73,6 +77,7 @@ public class ServerMain extends JFrame implements ActionListener {
         jp_north.setLayout(new FlowLayout(FlowLayout.LEFT));
         jta_log.setBackground(new Color(135, 206, 235));
         jp_north.add(jbtn_log);
+
         this.add("South",jp_north);
         this.add("Center",jsp_log);
         this.setSize(500, 400);
