@@ -30,7 +30,7 @@ public class ServerMain extends JFrame implements ActionListener {
     public void ServerStart() {
         stl = new Vector<>();
         try(ServerSocket ss = new ServerSocket(3000)) {
-            System.out.println("Ready to Server.....");
+            jta_log.append("Ready to Server....." + "\n");
 
             // 채팅데이터 관리를 위한 Map 객체 생성
             sdm = new ServerDataMng();
@@ -38,6 +38,7 @@ public class ServerMain extends JFrame implements ActionListener {
             while(true) {
                 // 새로운 클라이언트가 들어올때까지 accept()는 Block!!
                 clientSocket = ss.accept();
+                jta_log.append("client info : " + clientSocket + "\n");
                 System.out.println("클라이언트 접속 | " + clientSocket.getInetAddress());
 
                 // ServerThread 클래스의 run()스레드 생성
@@ -98,12 +99,11 @@ public class ServerMain extends JFrame implements ActionListener {
     public static void main(String[] args) {
         ServerMain sm = new ServerMain();
         sm.initDisplay();
-        new ServerMain().ServerStart();
+        sm.ServerStart();
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        //dkrkqweijrliaje
 
     }
 }

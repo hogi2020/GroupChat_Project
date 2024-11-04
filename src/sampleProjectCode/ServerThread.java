@@ -47,7 +47,7 @@ public class ServerThread implements Runnable {
             inStream = new ObjectInputStream(clientSocket.getInputStream());
 
             String msg = (String) inStream.readObject();
-            sm.jta_log.append(msg + "\n");
+            sm.jta_log.append(msg + "\n"); //메시지를 로그에 보이기
             StringTokenizer stz = new StringTokenizer(msg, "#");
             stz.nextToken(); //미정, 사용자 대화 받아오기
             Nickname = stz.nextToken(); //닉네임 받아오기
@@ -76,7 +76,6 @@ public class ServerThread implements Runnable {
                 String[] strArray = msg.split("#", 2);
                 String command = strArray[0];
                 String content = strArray[1];
-
                 String roomName;
                 ServerRoomMsg roomMsg;
                 if (strArray.length == 2) {
@@ -105,7 +104,6 @@ public class ServerThread implements Runnable {
                 for (pro = 200; pro <= 400; pro++){
                     switch (pro){
                         case 200:{
-
 
                         }break;
                         case 201:

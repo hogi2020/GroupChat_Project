@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="Merge branch 'kim_min_tae' of https://github.com/hogi2020/GroupChat_Project into kim_min_tae">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sampleProjectCode/ServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sampleProjectCode/ServerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +46,22 @@
     "git-widget-placeholder": "kim__min__tae",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/project/GroupChat_Project",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "last_opened_file_path": "C:/Users/mtwd9/Desktop/workspace_java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "라이브러리",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
     "애플리케이션.ClientUI.executor": "Run",
     "애플리케이션.ServerMain.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="애플리케이션.ClientUI">
     <configuration name="ClientUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sampleProjectCode.ClientUI" />
       <module name="GroupChat_Project" />
@@ -82,6 +95,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -90,6 +111,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729499647071</updated>
+      <workItem from="1730733310392" duration="587000" />
+      <workItem from="1730734083407" duration="117000" />
+      <workItem from="1730735153765" duration="1843000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'kim_min_tae' of https://github.com/hogi2020/GroupChat_Project into kim_min_tae">
       <option name="closed" value="true" />
@@ -110,8 +134,18 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="Merge branch 'kim_min_tae' of https://github.com/hogi2020/GroupChat_Project into kim_min_tae" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'kim_min_tae' of https://github.com/hogi2020/GroupChat_Project into kim_min_tae" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
