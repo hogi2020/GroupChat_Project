@@ -43,6 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "Application.ClientUI.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
 <<<<<<< HEAD
@@ -92,6 +93,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+    "Application.ServerMain.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/workspace_java/GroupChat_Project",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RunManager">
+>>>>>>> origin/Yewon_Client
     <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sampleProjectCode.ServerMain" />
       <module name="GroupChat_Project" />
@@ -107,8 +121,12 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="애플리케이션.ClientUI" />
         <item itemvalue="애플리케이션.ServerMain" />
+=======
+        <item itemvalue="Application.ServerMain" />
+>>>>>>> origin/Yewon_Client
       </list>
     </recent_temporary>
   </component>
