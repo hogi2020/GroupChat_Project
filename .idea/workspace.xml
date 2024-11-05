@@ -44,6 +44,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/Jiseon
     "Application.ClientUI.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
 <<<<<<< HEAD
@@ -100,8 +103,12 @@
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "D:/workspace_java/GroupChat_Project",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+=======
+    "last_opened_file_path": "D:/project/GroupChat_Project/src/originCode"
+>>>>>>> origin/Jiseon
   }
 }]]></component>
   <component name="RunManager">
