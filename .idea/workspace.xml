@@ -45,6 +45,7 @@
   "keyToString": {
     "Application.ClientUI.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "kim__min__tae",
     "ignore.virus.scanning.warn.message": "true",
@@ -66,6 +67,15 @@
     "애플리케이션.ClientUI.executor": "Run",
     "애플리케이션.ServerMain.executor": "Run"
 >>>>>>> kim_min_tae
+=======
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "Junbyeong",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Junbyeong",
+    "애플리케이션.ClientUI.executor": "Run",
+    "애플리케이션.ServerMain.executor": "Run"
+>>>>>>> origin/Junbyeong
   }
 }]]></component>
   <component name="RunManager" selected="애플리케이션.ClientUI">
