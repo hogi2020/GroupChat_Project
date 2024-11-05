@@ -45,13 +45,12 @@ public class ServerThread implements Runnable {
             // 입출력 스트림 객체 생성
             outStream = new ObjectOutputStream(clientSocket.getOutputStream());
             inStream = new ObjectInputStream(clientSocket.getInputStream());
-
             String msg = (String) inStream.readObject();
             sm.jta_log.append(msg + "\n"); //메시지를 로그에 보이기
             StringTokenizer stz = new StringTokenizer(msg, "#");
             stz.nextToken(); //미정, 사용자 대화 받아오기
             Nickname = stz.nextToken(); //닉네임 받아오기
-            sm.jta_log.append(Nickname + "님이 이리오너라~~ 를 시전했습니다. \n"); //입장시 나오는 문구
+            sm.jta_log.append(Nickname + " 님이 이리오너라~~ 를 시전했습니다. \n"); //입장시 나오는 문구
 
             for (ServerThread st:sm.stl){ //
                 this.send("수신정보" + "#" + st.Nickname);
@@ -73,6 +72,7 @@ public class ServerThread implements Runnable {
                 StringTokenizer stz2 = new StringTokenizer(msg, "#");
                 int pro = 0; //
                 System.out.println("스레드 동작 | " + msg);
+
                 String[] strArray = msg.split("#", 2);
                 String command = strArray[0];
                 String content = strArray[1];
@@ -110,7 +110,7 @@ public class ServerThread implements Runnable {
                             if (stz2.hasMoreTokens()) {
                                 String nickName = stz2.nextToken();
                                 String message = stz2.hasMoreTokens() ? stz2.nextToken() : "";
-                                broadCasting(pro + "#" + nickName + "#" + message);
+                                broadCasting(pro + " # " + nickName + " # " + message);
                             }
                             break;
                         case 202:
@@ -119,7 +119,7 @@ public class ServerThread implements Runnable {
                                 String afterName = stz2.hasMoreTokens() ? stz2.nextToken() : "";
                                 String message = stz2.hasMoreTokens() ? stz2.nextToken() : "";
                                 this.Nickname = afterName;
-                                broadCasting(pro + "#" + nickName + "#" + afterName + "#" + message);
+                                broadCasting(pro + " # " + nickName + " # " + afterName + " # " + message);
                             }
                             break;
                         default:

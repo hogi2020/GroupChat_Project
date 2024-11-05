@@ -25,6 +25,8 @@ public class ClientUI extends JFrame implements ActionListener {
     JButton btn_create = new JButton("Add_Group+");
     JButton btn_join = new JButton("Join");
 
+    ServerThread st_nickName = new ServerThread();
+
 
     // 생성자 생성
     public ClientUI() {
@@ -71,7 +73,7 @@ public class ClientUI extends JFrame implements ActionListener {
 
         // 동작 시, 메세지 전송 (공란이 아닐 경우)
         if (!outMsg.isEmpty()) {
-            op.sendMsg("MsgSend#" + outMsg);  // 메세지 보내기
+            op.sendMsg("MsgSend# " + st_nickName.Nickname + " " + outMsg);  // 메세지 보내기
             txt_field.setText("");            // 텍스트필드 초기화
             txt_area.setText("");             // 텍스트Area 초기화
 
@@ -79,7 +81,7 @@ public class ClientUI extends JFrame implements ActionListener {
         } else if (obj == btn_create) {
             String roomName = JOptionPane.showInputDialog(this, "그룹명을 입력해주세요!");
             if (roomName != null && !roomName.isEmpty()) {
-                op.sendMsg("Create#" + roomName);    // 그룹창 생성
+                op.sendMsg("Create# " + roomName);    // 그룹창 생성
             }
 
             // 동작 시, 선택한 그룹창에 입장합니다.
@@ -87,7 +89,7 @@ public class ClientUI extends JFrame implements ActionListener {
             String roomSelect = list_room.getSelectedValue();
             txt_area.setText("");
             if (roomSelect != null) {
-                op.sendMsg("Join#" + roomSelect);
+                op.sendMsg("Join# " + roomSelect);
             } else {
                 // 동작 시, 확인 불가 알림
                 JOptionPane.showMessageDialog(this, "참여 가능한 그룹이 없습니다.");
