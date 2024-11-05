@@ -11,13 +11,13 @@ public class ClientProtocol implements Runnable {
     private ObjectInputStream in = null;
     private ObjectOutputStream out = null;
     String msg = null;
-    CustomActionListener customActionListener = new CustomActionListener(this);
-    private UIMain uiMain = null;
+
+    private UIMain cui = null;
 
 
     // 생성자 생성
-    public ClientProtocol(UIMain uiMain) {
-        this.uiMain = uiMain;
+    public ClientProtocol(UIMain cui) {
+        this.cui = cui;
         connectToServer();
     }
 
@@ -25,7 +25,7 @@ public class ClientProtocol implements Runnable {
     // 서버 연결
     public void connectToServer() {
         try {
-            clientSocket = new Socket("localhost", 3000);
+            clientSocket = new Socket("localhost", 5000);
             in = new ObjectInputStream(clientSocket.getInputStream());
             out = new ObjectOutputStream(clientSocket.getOutputStream());
             System.out.println("Connect to Server.....");
@@ -47,13 +47,16 @@ public class ClientProtocol implements Runnable {
                 String[] strArray = msg.split("#", 2);
                 String protocol = strArray[0];
                 String content = strArray[1];
-                MessengerUI ui = null;
 
                 // 입력 스트림을 통한 RoomList 업데이트 진행
                 if (protocol.equals("MsgSend")) {
-                    ui.displayMsg(content);
+                    cui.ui.displayMsg(content);
+
                 } else if (protocol.equals("RoomList")) {
-                    ui.updateRoomList(content.split(","));
+                    cui.ui.updateRoomList(content.split(","));
+
+                } else if (protocol.equals("Join")) {
+                    cui.ui.displayMsg(content);
                 }
             }
         } catch (IOException | ClassNotFoundException e) {
@@ -66,6 +69,9 @@ public class ClientProtocol implements Runnable {
             }
         }
     }
+
+
+
     // 클라이언트-서버 출력스트림 메서드
     public void sendMsg(String msg) {
         try {

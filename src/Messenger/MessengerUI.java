@@ -6,7 +6,7 @@ import java.awt.*;
 public class MessengerUI extends JFrame {
     JTextField msg_insert;
     JTextArea msg_display;
-    JTextArea room_display;
+    //JTextArea room_display;
     JButton send_button;
     //JButton rename_button;
     JButton create_room;
@@ -31,30 +31,33 @@ public class MessengerUI extends JFrame {
 
         msg_insert = new JTextField();
         msg_display = new JTextArea();
-        room_display = new JTextArea();
+        //room_display = new JTextArea();
         send_button = new JButton(new ImageIcon(imagePath + "sendB.png"));
         //rename_button = new JButton(new ImageIcon(imagePath + "renicB2.png"));
         create_room = new JButton(new ImageIcon(imagePath + "create_roomB.png"));
         msgScrollPane = new JScrollPane(msg_display);
-        roomScrollPane = new JScrollPane(room_display);
+        roomScrollPane = new JScrollPane(list_room);
         room_Label = new JLabel("   채팅방 목록");
         //수정불가
         msg_display.setEditable(false);
-        room_display.setEditable(false);
+        //room_display.setEditable(false);
         //글자
         send_button.setFont(font);
         //rename_button.setFont(font);
         msg_insert.setFont(font);
         msg_display.setFont(font);
         msg_display.setForeground(new Color(0, 0, 0, 255));
-        room_display.setFont(font);
-        room_display.setForeground(new Color(43, 43, 43, 255));
+        //room_display.setFont(font);
+        //room_display.setForeground(new Color(43, 43, 43, 255));
+        list_room.setFont(font);
+        list_room.setForeground(new Color(0, 0, 0, 255));
         msgScrollPane.setFont(font);
         roomScrollPane.setFont(font);
         room_Label.setFont(font);
         //배경색
         msg_display.setBackground(color);
-        room_display.setBackground(new Color(183, 255, 249, 255));
+        //room_display.setBackground(new Color(183, 255, 249, 255));
+        list_room.setBackground(new Color(183, 255, 249, 255));
         send_button.setBackground(new Color(183, 183, 183, 255));
         //rename_button.setBackground(new Color(183, 183, 183, 255));;
         msgScrollPane.setBackground(color);
@@ -86,12 +89,11 @@ public class MessengerUI extends JFrame {
     public JTextArea getMsgDisplay() {return msg_display;}
     public JButton getSendButton() {return send_button;}
     //public JButton getRenameButton() {return rename_button;}
-    public JTextArea getroomDisplay() {return room_display;}
+    public JList<String> getroomDisplay() {return list_room;}
     public JButton getCreateRoom() {return create_room;}
     // 메세지를 창에 업데이트
     public void displayMsg(String inMsg) {
-        room_display.append(" " + inMsg + "\n");
-    }
+        msg_display.append(" " + inMsg + "\n");}
     // 그룹 목록 List 업데이트
     public void updateRoomList(String[] rooms) {
         listModel_room.clear();
@@ -99,6 +101,7 @@ public class MessengerUI extends JFrame {
             listModel_room.addElement(room);
         }
     }
+    public JList<String> getEnterRoom() {return list_room;}
 }
 
 /************** 미구현

@@ -9,6 +9,7 @@ public class InsertNickname extends JFrame {
     Font font = new Font("netmarble Medium", Font.PLAIN, 15);
     String imagePath = "C:\\workspace_java\\Messenger\\src\\image\\";
 
+
     // 배경 이미지
     class Mypanel extends JPanel {
         ImageIcon img = new ImageIcon(imagePath + "insertnic.png");
@@ -50,6 +51,7 @@ public class InsertNickname extends JFrame {
         //크기변경 불가
         this.setResizable(false);
         this.setVisible(true);
+
     }
     public JTextField getNicknameField() {return nickname;}
     public JButton getInsertButton() {return insert_button;}

@@ -12,19 +12,15 @@ public class CustomActionListener  extends Component implements ActionListener, 
     private MessengerUI ui;
     //private Rename rename;
     private String nickname;
-    private ClientProtocol op = null;
-    public UIMain uiMain = null;
+    private ClientProtocol op;
+    public UIMain uiMain;
 
-    public CustomActionListener(ClientProtocol op) {
-        this.op = op;
-    }
-
-
-    public CustomActionListener(InsertNickname insertNickname, MessengerUI ui/*, Rename rename*/,UIMain uiMain) {
+    public CustomActionListener(InsertNickname insertNickname, MessengerUI ui/*, Rename rename*/,UIMain uiMain,ClientProtocol op) {
         this.insertNickname = insertNickname;
         this.ui = ui;
         this.uiMain = uiMain;
         //this.rename = rename;
+        this.op = op;
     }
 
     @Override
@@ -87,9 +83,9 @@ public class CustomActionListener  extends Component implements ActionListener, 
 
     @Override
     public void mousePressed(MouseEvent e) {
-        if(e.getClickCount()==1){
+        if(e.getClickCount()==2){
             String roomSelect = ui.list_room.getSelectedValue();
-            ui.room_display.setText("");
+            ui.msg_insert.setText("");
             if (roomSelect != null) {
                 op.sendMsg("Join#" + roomSelect);
             } else {

@@ -4,7 +4,7 @@ public class UIMain {
     ClientProtocol op = new ClientProtocol(this);
     InsertNickname insertNickname = new InsertNickname();
     MessengerUI ui = new MessengerUI();
-    CustomActionListener actionListener = new CustomActionListener(insertNickname, ui/*, rename*/, this);
+    CustomActionListener actionListener = new CustomActionListener(insertNickname, ui/*, rename*/, this,op);
     public static void main(String[] args) {
         UIMain uiMain = new UIMain();
 
@@ -21,6 +21,7 @@ public class UIMain {
         uiMain.ui.getSendButton().addActionListener(uiMain.actionListener);
         uiMain.ui.getMsgInsertField().setActionCommand("send_message");
         uiMain.ui.getMsgInsertField().addActionListener(uiMain.actionListener);
+        uiMain.ui.getEnterRoom().addMouseListener(uiMain.actionListener);
         //ui.getRenameButton().setActionCommand("rename_nickname");
         //ui.getRenameButton().addActionListener(actionListener);
         uiMain.ui.getCreateRoom().setActionCommand("create_room");
