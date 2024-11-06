@@ -1,4 +1,4 @@
-package sampleProjectCode;
+package Messenger;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -12,11 +12,11 @@ public class ClientProtocol implements Runnable {
     private ObjectOutputStream out = null;
     String msg = null;
 
-    private ClientUI cui = null;
+    private UIMain cui = null;
 
 
     // 생성자 생성
-    public ClientProtocol(ClientUI cui) {
+    public ClientProtocol(UIMain cui) {
         this.cui = cui;
         connectToServer();
     }
@@ -25,7 +25,7 @@ public class ClientProtocol implements Runnable {
     // 서버 연결
     public void connectToServer() {
         try {
-            clientSocket = new Socket("localhost", 3000);
+            clientSocket = new Socket("localhost", 5000);
             in = new ObjectInputStream(clientSocket.getInputStream());
             out = new ObjectOutputStream(clientSocket.getOutputStream());
             System.out.println("Connect to Server.....");
@@ -50,13 +50,13 @@ public class ClientProtocol implements Runnable {
 
                 // 입력 스트림을 통한 RoomList 업데이트 진행
                 if (protocol.equals("MsgSend")) {
-                    cui.displayMsg(content);
+                    cui.ui.displayMsg(content);
 
                 } else if (protocol.equals("RoomList")) {
-                    cui.updateRoomList(content.split(","));
+                    cui.ui.updateRoomList(content.split(","));
 
                 } else if (protocol.equals("Join")) {
-                    cui.displayMsg(content);
+                    cui.ui.displayMsg(content);
                 }
             }
         } catch (IOException | ClassNotFoundException e) {

@@ -1,4 +1,4 @@
-package sampleProjectCode;
+package ProjectCode;
 
 import javax.swing.*;
 import java.awt.*;
