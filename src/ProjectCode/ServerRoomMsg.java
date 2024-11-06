@@ -1,4 +1,4 @@
-package sampleProjectCode;
+package ProjectCode;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;

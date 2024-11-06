@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clientProtocol/CustomActionListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clientProtocol/InsertNickname.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clientProtocol/MessengerUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clientProtocol/TimeServer2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clientProtocol/UIMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ClientProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ClientUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ClientUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/DBConnectionMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerRoomMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerRoomMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/TalkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/project/GroupChat_Project/src/originCode"
+    "last_opened_file_path": "D:/project/GroupChat_Project"
   }
 }]]></component>
   <component name="RecentsManager">
