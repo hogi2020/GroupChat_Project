@@ -32,7 +32,8 @@ public class CustomActionListener  extends Component implements ActionListener, 
             nickname = nicknameField.getText();
             if (nickname.length() > 0 && nickname.length() <= 10) {
                 insertNickname.dispose();
-                ui.setTitle(nickname + "님의 대화창");
+                op.sendMsg("MsgSend#" + nickname);
+                ui.setTitle(nickname +"님의 대화창");
                 ui.setVisible(true);
                 ui.msg_insert.requestFocusInWindow();
 

@@ -5,17 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/ClientProtocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/CustomActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/CustomActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/InsertNickname.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/InsertNickname.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/MessengerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/MessengerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messenger/UIMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/UIMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupChat_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GroupChat_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/Messenger.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/mssenger.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/netmarbleM.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/Messenger.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/Messenger/CustomActionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/Messenger/InsertNickname.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/Messenger/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/Messenger/MessengerUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/Messenger/Rename.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/image/insertB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/image/insertnic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/image/renic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/image/renicB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/image/renicB2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Junbyeong/Messenger/src/image/sendB.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ClientUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/DBConnectionMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/image/createB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/CustomActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/CustomActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/UIMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/UIMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,20 +69,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ClientUI.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Junbyeong&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/workspace_java/GroupChat_Project&quot;,
-    &quot;애플리케이션.ServerMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.UIMain.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ClientUI.executor": "Run",
+    "Application.ServerMain.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "Junbyeong",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/채송화/Documents/GroupChat_Project",
+    "애플리케이션.ServerMain.executor": "Run",
+    "애플리케이션.UIMain.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\GroupChat_Project\src\originCode" />
@@ -88,5 +104,31 @@
       <updated>1729499647071</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java</url>
+          <line>41</line>
+          <properties class="Junbyeong.Messenger.ClientProtocol" method="run">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
