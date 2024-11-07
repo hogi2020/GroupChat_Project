@@ -50,7 +50,7 @@ public class ServerThread implements Runnable {
             StringTokenizer stz = new StringTokenizer(msg, "#");
             stz.nextToken(); //미정, 사용자 대화 받아오기
             Nickname = stz.nextToken(); //닉네임 받아오기
-            sm.jta_log.append(Nickname + " 님이 이리오너라~~ 를 시전했습니다. \n"); //입장시 나오는 문구
+            sm.jta_log.append(Nickname + " 님의 이리오너라~~\n"); //입장시 나오는 문구
 
             for (ServerThread st:sm.stl){ //
                 this.send("수신정보" + "#" + st.Nickname);
