@@ -1,4 +1,4 @@
-package Messenger;
+package ProjectCode;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,7 +17,7 @@ public class MessengerUI extends JFrame {
     JLabel room_Label;
     Font font = new Font("netmarble Medium", Font.PLAIN, 15);
     Color color = new Color(225, 227, 255);
-    String imagePath = "C:\\workspace_java\\Messenger\\src\\image\\";
+    String imagePath = "src\\image\\";
 
 
     public MessengerUI() {
@@ -74,6 +74,7 @@ public class MessengerUI extends JFrame {
         //스크롤
         msgScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         roomScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+
         //삽입
         this.add(msg_insert);
         this.add(send_button);
@@ -93,7 +94,9 @@ public class MessengerUI extends JFrame {
     public JButton getCreateRoom() {return create_room;}
     // 메세지를 창에 업데이트
     public void displayMsg(String inMsg) {
-        msg_display.append(" " + inMsg + "\n");}
+        msg_display.append(" " + inMsg + "\n");
+        msg_display.setCaretPosition(msg_display.getDocument().getLength());
+    }
     // 그룹 목록 List 업데이트
     public void updateRoomList(String[] rooms) {
         listModel_room.clear();
