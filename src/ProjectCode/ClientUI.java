@@ -100,7 +100,7 @@ public class ClientUI extends JFrame implements ActionListener {
 
 
     // 메세지를 창에 업데이트
-    public void displayMsg(String inMsg) {
+    public void displayMsg(String inMsg) {//키위
         txt_area.append(" " + inMsg + "\n");
     }
 

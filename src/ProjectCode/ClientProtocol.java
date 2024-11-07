@@ -1,5 +1,6 @@
 package ProjectCode;
 
+import javax.swing.table.DefaultTableModel;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -8,10 +9,10 @@ import java.net.Socket;
 public class ClientProtocol implements Runnable {
     // 클라이언트 소켓, 입출력 스트림 선언
     private Socket clientSocket = null;
-    private ObjectInputStream in = null;
+    ObjectInputStream in = null;
     private ObjectOutputStream out = null;
     String msg = null;
-
+    DefaultTableModel dtm = new DefaultTableModel();//데이터값을 가진 클래스이지 화면이 없으면 소용없음.JTable
     private ClientUI cui = null;
 
 
@@ -44,9 +45,10 @@ public class ClientProtocol implements Runnable {
         try {
             while((msg = (String) in.readObject()) != null) {
                 System.out.println("수신정보 | " + msg);
+                // MsgSend#키위
                 String[] strArray = msg.split("#", 2);
-                String protocol = strArray[0];
-                String content = strArray[1];
+                String protocol = strArray[0];//100
+                String content = strArray[1];//키위
 
                 // 입력 스트림을 통한 RoomList 업데이트 진행
                 if (protocol.equals("MsgSend")) {
