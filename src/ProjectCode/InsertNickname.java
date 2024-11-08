@@ -1,4 +1,4 @@
-package Messenger;
+package ProjectCode;
 
 import javax.swing.*;
 import java.awt.*;
@@ -7,7 +7,7 @@ public class InsertNickname extends JFrame {
     JTextField nickname;
     JButton insert_button;
     Font font = new Font("netmarble Medium", Font.PLAIN, 15);
-    String imagePath = "C:\\workspace_java\\Messenger\\src\\image\\";
+    String imagePath = "src\\image\\";
 
 
     // 배경 이미지
@@ -22,7 +22,7 @@ public class InsertNickname extends JFrame {
     public InsertNickname() {
         nickname = new JTextField();
         insert_button = new JButton(new ImageIcon(imagePath + "insertB.png"));
-        setContentPane(new InsertNickname.Mypanel());
+        setContentPane(new Mypanel());
 
         //프레임 기본설정
         this.setLayout(null);

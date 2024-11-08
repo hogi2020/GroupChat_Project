@@ -46,11 +46,11 @@ public class ServerThread implements Runnable {
             outStream = new ObjectOutputStream(clientSocket.getOutputStream());
             inStream = new ObjectInputStream(clientSocket.getInputStream());
             String msg = (String) inStream.readObject();
-            sm.jta_log.append(msg + "\n"); //메시지를 로그에 보이기
+            sm.jta_log.append(msg + "\n" + sm.setDays()); //메시지를 로그에 보이기
             StringTokenizer stz = new StringTokenizer(msg, "#");
             stz.nextToken(); //미정, 사용자 대화 받아오기
             Nickname = stz.nextToken(); //닉네임 받아오기
-            sm.jta_log.append(Nickname + " 님이 이리오너라~~ 를 시전했습니다. \n"); //입장시 나오는 문구
+            sm.jta_log.append(Nickname + " 님의 이리오너라~\n" + sm.setDays() + "\n"); //입장시 나오는 문구
 
             for (ServerThread st:sm.stl){ //
                 this.send("수신정보" + "#" + st.Nickname);
@@ -101,8 +101,7 @@ public class ServerThread implements Runnable {
                             break;
                     }
                 }
-                for (pro = 200; pro <= 400; pro++){
-                    switch (pro){
+                switch (pro){
                         case 200:{
 
                         }break;
@@ -125,6 +124,7 @@ public class ServerThread implements Runnable {
                         default:
                             System.out.println("방 인원수가 최대치 입니다.");
                             break;
+//
 //                        case 201:{
 //                            String nickName = stz2.nextToken();
 //                            String message = stz2.nextToken();
@@ -149,7 +149,7 @@ public class ServerThread implements Runnable {
 //                            System.out.println("방 인원수가 최대치 입니다.");
 //                            break;
                     }
-                }
+
                 if (stz2.hasMoreTokens()){
                     String nickName = stz2.nextToken();
                     sm.stl.remove(this);
