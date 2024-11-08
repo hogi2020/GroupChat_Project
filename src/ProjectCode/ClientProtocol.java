@@ -10,6 +10,7 @@ public class ClientProtocol implements Runnable {
     private Socket clientSocket = null;
     private ObjectInputStream in = null;
     private ObjectOutputStream out = null;
+    ServerMain sm = new ServerMain();
     String msg = null;
     private UIMain cui = null;
 
@@ -27,7 +28,7 @@ public class ClientProtocol implements Runnable {
             clientSocket = new Socket("localhost", 3000);
             in = new ObjectInputStream(clientSocket.getInputStream());
             out = new ObjectOutputStream(clientSocket.getOutputStream());
-            System.out.println("Connect to Server.....");
+            sm.jta_log.append("Connect to Server\n" + sm.setDays());
 
             new Thread(this).start();
         } catch (IOException e) {

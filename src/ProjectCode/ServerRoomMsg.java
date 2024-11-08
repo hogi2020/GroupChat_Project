@@ -40,7 +40,7 @@ public class ServerRoomMsg {
         // 채팅방 입장 메세지 전송
         for (ObjectOutputStream outStream : joinClients) {
             try {
-                outStream.writeObject("MsgSend#>>["+roomName+"]에 입장하였습니다.");
+                outStream.writeObject("MsgSend#>>["+ roomName +"]에 입장하였습니다.");
             } catch (IOException e) {
                 System.out.println("roomNameMsg 오류 | " + e.getMessage());
             }

@@ -7,7 +7,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TalkDao {
+public class
+
+TalkDao {
     // DB 연결 관리 객체
     DBConnectionMgr dbMgr = DBConnectionMgr.getInstance();
     Connection conn = null;
