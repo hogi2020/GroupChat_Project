@@ -72,7 +72,7 @@ public class ClientProtocol implements Runnable {
 
 
     // 클라이언트-서버 출력스트림 메서드
-    public void sendMsg(String msg) {
+    public String sendMsg(String msg) {
         try {
             out.writeObject(msg);
             // 메모리 임시공간(버퍼)은 일정 크기가 차면 그 때 출력되는데, flush()를 통해 지연 없이 즉시 출력되도록 할 수 있습니다.
@@ -80,5 +80,6 @@ public class ClientProtocol implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return msg;
     }
 }

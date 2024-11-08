@@ -1,10 +1,12 @@
 package ProjectCode;
 
 public class UIMain {
+
     ClientProtocol op = new ClientProtocol(this);
     InsertNickname insertNickname = new InsertNickname();
     MessengerUI ui = new MessengerUI();
-    CustomActionListener actionListener = new CustomActionListener(insertNickname,ui,this,op);
+    CustomActionListener actionListener = new CustomActionListener(insertNickname, ui, this, op);
+
     public static void main(String[] args) {
         UIMain uiMain = new UIMain();
 
