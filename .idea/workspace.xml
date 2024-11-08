@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_2024-11-05,txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerRoomMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerRoomMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,9 @@
     &quot;accountId&quot;: &quot;2bc07bb5-096c-42cc-9439-2998e8ab66c1&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -41,32 +42,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ClientUI.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;kim__min__tae&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GroupChat_Project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;라이브러리&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;애플리케이션.ClientUI.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ServerMain (1).executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ServerMain (2).executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ServerMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.UIMain.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ClientUI.executor": "Run",
+    "Application.ServerMain.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "kim__min__tae",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/workspace_java/basic1/lib/okhttp-3.14.9.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "라이브러리",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.ClientUI.executor": "Run",
+    "애플리케이션.ServerMain (1).executor": "Run",
+    "애플리케이션.ServerMain (2).executor": "Run",
+    "애플리케이션.ServerMain.executor": "Run",
+    "애플리케이션.UIMain.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\GroupChat_Project\src\originCode" />
@@ -75,7 +76,7 @@
       <recent name="clientProtocol" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.ClientUI">
+  <component name="RunManager" selected="애플리케이션.ServerMain">
     <configuration name="ClientUI" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProjectCode.ClientUI" />
       <module name="GroupChat_Project" />
@@ -149,21 +150,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.ClientUI" />
         <item itemvalue="애플리케이션.ServerMain" />
+        <item itemvalue="애플리케이션.ClientUI" />
         <item itemvalue="애플리케이션.ServerMain (2)" />
         <item itemvalue="애플리케이션.ServerMain (1)" />
         <item itemvalue="애플리케이션.UIMain" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
