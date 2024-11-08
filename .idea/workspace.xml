@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b85c91fa-ba4e-4eca-b740-5c1c7b70dc8e" name="변경" comment="" />
+    <list default="true" id="b85c91fa-ba4e-4eca-b740-5c1c7b70dc8e" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/CustomActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/CustomActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/MessengerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/MessengerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/UIMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/UIMain.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,20 +38,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UIMain.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/채송화/Documents/GroupChat_Project&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;애플리케이션.MessengerMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ServerMain.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ServerMain.executor": "Run",
+    "Application.UIMain.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "Junbyeong",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/workspace_java/Messenger/src/ProjectCode/InsertNickname.java",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "애플리케이션.MessengerMain.executor": "Run",
+    "애플리케이션.ServerMain.executor": "Run",
+    "애플리케이션.UIMain.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Junbyeong\Messenger\src\Messenger" />
@@ -54,6 +60,20 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Messenger" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="이름이 지정되지 않았습니다" type="Application" factoryName="Application" nameIsGenerated="true">
+      <module name="GroupChat_Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" singleton="false">
+      <module name="GroupChat_Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,6 +85,20 @@
       <updated>1730606190236</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
