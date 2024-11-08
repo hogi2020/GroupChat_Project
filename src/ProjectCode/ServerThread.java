@@ -86,7 +86,6 @@ public class ServerThread implements Runnable {
                             roomMsg = sdm.getRoomMsg(roomName);
                             roomMsg.msgSave(content);
                             roomMsg.broadcastMsg(roomName);
-                            sm.jta_log.append(sm.setDays() + "\n");
                             // outStream.writeObject("MsgSend#" + content);
                             break;
                         case "Create":      /// 그룹창 생성

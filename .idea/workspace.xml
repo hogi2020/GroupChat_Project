@@ -5,36 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupChat_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GroupChat_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md.rej" beforeDir="false" afterPath="$PROJECT_DIR$/README.md.rej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/messenger.sql" beforeDir="false" afterPath="$PROJECT_DIR$/query/messenger.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectCode/CustomActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/CustomActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/DBConnectionMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/InsertNickname.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/InsertNickname.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/MessengerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/MessengerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerRoomMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerRoomMsg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/UIMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/UIMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/originCode/ClientProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/originCode/ClientProtocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/originCode/ClientUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/originCode/ClientUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/originCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/originCode/ServerDataMng.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/originCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/originCode/ServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/originCode/ServerRoomMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/originCode/ServerRoomMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/originCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/originCode/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/요구사항분석서.md" beforeDir="false" afterPath="$PROJECT_DIR$/요구사항분석서.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
