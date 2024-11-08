@@ -11,12 +11,11 @@ public class ClientProtocol implements Runnable {
     private ObjectInputStream in = null;
     private ObjectOutputStream out = null;
     String msg = null;
-
-    private ClientUI cui = null;
+    private UIMain cui = null;
 
 
     // 생성자 생성
-    public ClientProtocol(ClientUI cui) {
+    public ClientProtocol(UIMain cui) {
         this.cui = cui;
         connectToServer();
     }
@@ -50,13 +49,13 @@ public class ClientProtocol implements Runnable {
 
                 // 입력 스트림을 통한 RoomList 업데이트 진행
                 if (protocol.equals("MsgSend")) {
-                    cui.displayMsg(content);
+                    cui.ui.displayMsg(content);
 
                 } else if (protocol.equals("RoomList")) {
-                    cui.updateRoomList(content.split(","));
+                    cui.ui.updateRoomList(content.split(","));
 
                 } else if (protocol.equals("Join")) {
-                    cui.displayMsg(content);
+                    cui.ui.displayMsg(content);
                 }
             }
         } catch (IOException | ClassNotFoundException e) {
@@ -73,7 +72,7 @@ public class ClientProtocol implements Runnable {
 
 
     // 클라이언트-서버 출력스트림 메서드
-    public void sendMsg(String msg) {
+    public String sendMsg(String msg) {
         try {
             out.writeObject(msg);
             // 메모리 임시공간(버퍼)은 일정 크기가 차면 그 때 출력되는데, flush()를 통해 지연 없이 즉시 출력되도록 할 수 있습니다.
@@ -81,5 +80,6 @@ public class ClientProtocol implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return msg;
     }
 }

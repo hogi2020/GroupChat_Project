@@ -1,4 +1,4 @@
-package com.util;
+package ProjectCode;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
