@@ -30,9 +30,9 @@ SELECT sender, message, timestamp FROM chat_messages
 
 ---------------------------------------------------
 
-SELECT sender, receiver, message, timestamp
+SELECT sender, receiver, message, timestamp, num
     FROM chat_messages
-    WHERE sender = :x;
+    WHERE num = :x;
 
 ---------------------------------------------------
 
@@ -49,3 +49,13 @@ CREATE TABLE chat_messages (
 ALTER TABLE chat_messages
 MODIFY message VARCHAR2(4000);
 
+CREATE TABLE SCOTT.CHAT_MESSAGES
+(
+  SENDER     VARCHAR2(50 BYTE)                  NOT NULL,
+  RECEIVER   VARCHAR2(50 BYTE)                  NOT NULL,
+  MESSAGE    VARCHAR2(4000 BYTE)                NOT NULL,
+  TIMESTAMP  TIMESTAMP(6)                       DEFAULT CURRENT_TIMESTAMP,  -- 메시지 전송 시간 (기본값은 현재 시간),
+  NUM        NUMBER(5) constraints message_num_pk primary key
+);
+
+drop table chat_messages;
