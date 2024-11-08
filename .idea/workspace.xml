@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <recent name="clientProtocol" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.UIMain">
+  <component name="RunManager" selected="애플리케이션.ClientUI">
     <configuration name="ClientUI" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProjectCode.ClientUI" />
       <module name="GroupChat_Project" />
@@ -148,9 +147,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.UIMain" />
-        <item itemvalue="애플리케이션.ServerMain" />
         <item itemvalue="애플리케이션.ClientUI" />
+        <item itemvalue="애플리케이션.ServerMain" />
+        <item itemvalue="애플리케이션.UIMain" />
         <item itemvalue="애플리케이션.ServerMain (2)" />
         <item itemvalue="애플리케이션.ServerMain (1)" />
       </list>
