@@ -29,7 +29,7 @@ public class ClientProtocol implements Runnable {
             clientSocket = new Socket("localhost", 3000);
             in = new ObjectInputStream(clientSocket.getInputStream());
             out = new ObjectOutputStream(clientSocket.getOutputStream());
-            sm.jta_log.append("Connect to Server\n");
+            sm.jta_log.append("Connect to Server\n" + sm.setDays());
 
             new Thread(this).start();
         } catch (IOException e) {
