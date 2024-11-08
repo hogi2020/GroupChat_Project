@@ -14,6 +14,7 @@ public class CustomActionListener  extends Component implements ActionListener, 
     private String nickname;
     private ClientProtocol op;
     public UIMain uiMain;
+    ServerMain sm = new ServerMain();
 
     public CustomActionListener(InsertNickname insertNickname, MessengerUI ui/*, Rename rename*/, UIMain uiMain, ClientProtocol op) {
         this.insertNickname = insertNickname;
@@ -32,7 +33,7 @@ public class CustomActionListener  extends Component implements ActionListener, 
             nickname = nicknameField.getText();
             if (nickname.length() > 0 && nickname.length() <= 10) {
                 insertNickname.dispose();
-                op.sendMsg("MsgSend#" + nickname);
+                op.sendMsg("MsgSend#" + nickname + " " + sm.setDays());
                 ui.setTitle(nickname +"님의 대화창");
                 ui.setVisible(true);
                 ui.msg_insert.requestFocusInWindow();
@@ -46,7 +47,7 @@ public class CustomActionListener  extends Component implements ActionListener, 
             String message = msgInsertField.getText();
             if (!message.trim().isEmpty()) {
                 JTextArea msgDisplay = ui.getMsgDisplay();
-                op.sendMsg("MsgSend#" + nickname + " :\n" + message + "\n");  // 메세지 보내기
+                op.sendMsg("MsgSend#" + nickname + " :\n" + message + " " + sm.setDays() + "\n");  // 메세지 보내기
                 msgInsertField.setText("");  // 텍스트필드 초기화
                 msg_display.setText("");
 

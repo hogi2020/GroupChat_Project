@@ -46,11 +46,11 @@ public class ServerThread implements Runnable {
             outStream = new ObjectOutputStream(clientSocket.getOutputStream());
             inStream = new ObjectInputStream(clientSocket.getInputStream());
             String msg = (String) inStream.readObject();
-            sm.jta_log.append(msg + "\n" + sm.setDays()); //메시지를 로그에 보이기
+            sm.jta_log.append(msg + "\n"); //메시지를 로그에 보이기
             StringTokenizer stz = new StringTokenizer(msg, "#");
             stz.nextToken(); //미정, 사용자 대화 받아오기
             Nickname = stz.nextToken(); //닉네임 받아오기
-            sm.jta_log.append(Nickname + " 님의 이리오너라~\n" + sm.setDays() + "\n"); //입장시 나오는 문구
+            sm.jta_log.append(Nickname + " 입장\n"); //입장시 나오는 문구
 
             for (ServerThread st:sm.stl){ //
                 this.send("수신정보" + "#" + st.Nickname);
@@ -86,12 +86,15 @@ public class ServerThread implements Runnable {
                             roomMsg = sdm.getRoomMsg(roomName);
                             roomMsg.msgSave(content);
                             roomMsg.broadcastMsg(roomName);
+                            sm.jta_log.append(sm.setDays() + "\n");
                             // outStream.writeObject("MsgSend#" + content);
                             break;
                         case "Create":      /// 그룹창 생성
+                            sm.jta_log.append(sm.setDays() + "\n");
                             sdm.createRoom(content);
                             break;
                         case "Join":
+                            sm.jta_log.append(sm.setDays() + "\n");
                             sdm.ClientToRoom(outStream, content);
                             roomMsg = sdm.getRoomMsg(content);
                             roomMsg.addClient(outStream, content);
@@ -102,7 +105,7 @@ public class ServerThread implements Runnable {
                     }
                 }
                 switch (pro){
-                        case 200:{
+                        case 200:{ //200 : 입장, 300 : 나가기, 방목록 : 400, 방 변경 : 401,
 
                         }break;
                         case 201:

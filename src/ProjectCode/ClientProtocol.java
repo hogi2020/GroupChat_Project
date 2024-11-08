@@ -46,7 +46,7 @@ public class ClientProtocol implements Runnable {
 
     // 프로토콜에 따른 입력스트림 처리
     @Override
-    public void run() {
+    public void run() { //200 : 입장, 300 : 나가기, 방목록 : 400, 방 변경 : 401,
         try {
             while((msg = (String) in.readObject()) != null) {
                 System.out.println("수신정보 | " + msg);
