@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="b85c91fa-ba4e-4eca-b740-5c1c7b70dc8e" name="변경" comment="" />
-=======
-    <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
-    </list>
->>>>>>> origin/kim_min_tae
+    <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,182 +21,38 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/hogi2020/GroupChat_Project.git&quot;,
-    &quot;accountId&quot;: &quot;dea8166b-fb01-4afc-ad45-e39ecc802346&quot;
+    &quot;url&quot;: &quot;git@github.com:hogi2020/GroupChat_Project.git&quot;,
+    &quot;accountId&quot;: &quot;2bc07bb5-096c-42cc-9439-2998e8ab66c1&quot;
   }
 }</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2oK70RzQX5PzD0BOIqul5Je5A2i" />
+  <component name="ProjectId" id="2njwA8HJWAV5pvQs3VNsCRXtHH3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-<<<<<<< HEAD
-    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UIMain.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/채송화/Documents/GroupChat_Project&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;애플리케이션.MessengerMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ServerMain.executor&quot;: &quot;Run&quot;
-=======
-    &quot;Application.ClientUI.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;kim__min__tae&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workspace_java/basic1/lib/okhttp-3.14.9.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;라이브러리&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;애플리케이션.ClientUI.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ServerMain (1).executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ServerMain (2).executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ServerMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.UIMain.executor&quot;: &quot;Run&quot;
->>>>>>> origin/kim_min_tae
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ClientUI.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/project/GroupChat_Project/src/originCode"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Junbyeong\Messenger\src\Messenger" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Messenger" />
-    </key>
-  </component>
-  <component name="RunManager" selected="애플리케이션.UIMain">
-    <configuration name="ClientUI" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProjectCode.ClientUI" />
-      <module name="GroupChat_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServerMain (1)" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProjectCode.ServerMain" />
-      <module name="GroupChat_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServerMain (2)" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProjectCode.ServerMain" />
-      <module name="GroupChat_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProjectCode.ServerMain" />
-      <module name="GroupChat_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectCode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UIMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Messenger.UIMain" />
-      <module name="GroupChat_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Messenger.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application" singleton="false">
-      <module name="GroupChat_Project" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="애플리케이션.UIMain" />
-        <item itemvalue="애플리케이션.ServerMain" />
-        <item itemvalue="애플리케이션.ClientUI" />
-        <item itemvalue="애플리케이션.ServerMain (2)" />
-        <item itemvalue="애플리케이션.ServerMain (1)" />
-      </list>
-    </recent_temporary>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="b85c91fa-ba4e-4eca-b740-5c1c7b70dc8e" name="변경" comment="" />
-      <created>1730606190236</created>
+      <changelist id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="" />
+      <created>1729499647071</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1730606190236</updated>
-    </task>
-    <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Messenger/src/Messenger/MessengerMain.java</url>
-          <line>354</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-=======
       <updated>1729499647071</updated>
-      <workItem from="1730881838036" duration="5186000" />
-      <workItem from="1730939559701" duration="1470000" />
-      <workItem from="1730949533862" duration="7000" />
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
->>>>>>> origin/kim_min_tae
   </component>
 </project>
