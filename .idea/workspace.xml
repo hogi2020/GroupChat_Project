@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ClientProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ClientUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ClientUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/DBConnectionMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerRoomMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerRoomMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sampleProjectCode/TalkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" afterDir="false" />
-    </list>
+    <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,17 +34,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ClientUI.executor": "Run",
-    "Application.ServerMain.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/project/GroupChat_Project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ClientUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/project/GroupChat_Project&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\GroupChat_Project\src\originCode" />
