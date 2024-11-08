@@ -101,8 +101,7 @@ public class ServerThread implements Runnable {
                             break;
                     }
                 }
-                for (pro = 200; pro <= 400; pro++){
-                    switch (pro){
+                switch (pro){
                         case 200:{
 
                         }break;
@@ -125,6 +124,7 @@ public class ServerThread implements Runnable {
                         default:
                             System.out.println("방 인원수가 최대치 입니다.");
                             break;
+//
 //                        case 201:{
 //                            String nickName = stz2.nextToken();
 //                            String message = stz2.nextToken();
@@ -149,7 +149,7 @@ public class ServerThread implements Runnable {
 //                            System.out.println("방 인원수가 최대치 입니다.");
 //                            break;
                     }
-                }
+
                 if (stz2.hasMoreTokens()){
                     String nickName = stz2.nextToken();
                     sm.stl.remove(this);
