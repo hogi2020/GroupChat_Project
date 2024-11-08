@@ -13,12 +13,7 @@ public class ClientProtocol implements Runnable {
     private ObjectOutputStream out = null;
     ServerMain sm = new ServerMain();
     String msg = null;
-<<<<<<< HEAD
-    DefaultTableModel dtm = new DefaultTableModel();//데이터값을 가진 클래스이지 화면이 없으면 소용없음.JTable
-    private ClientUI cui = null;
-=======
     private UIMain cui = null;
->>>>>>> 4a06d20a937e3a146bf1b1939f829f343a323555
 
 
     // 생성자 생성
