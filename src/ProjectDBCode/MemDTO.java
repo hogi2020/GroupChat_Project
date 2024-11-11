@@ -1,4 +1,4 @@
-package ojmDB;
+package ProjectDBCode;
 
 import lombok.*;
 
