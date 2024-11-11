@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b85c91fa-ba4e-4eca-b740-5c1c7b70dc8e" name="변경" comment="">
+    <list default="true" id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/CustomActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/CustomActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/MessengerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/MessengerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/UIMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/UIMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,84 +29,40 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2oK70RzQX5PzD0BOIqul5Je5A2i" />
+  <component name="ProjectId" id="2njwA8HJWAV5pvQs3VNsCRXtHH3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ServerMain.executor": "Run",
-    "Application.UIMain.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "Junbyeong",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/workspace_java/Messenger/src/ProjectCode/InsertNickname.java",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "애플리케이션.MessengerMain.executor": "Run",
-    "애플리케이션.ServerMain.executor": "Run",
-    "애플리케이션.UIMain.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ClientUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UIMain.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/project/GroupChat_Project/lib/ojdbc6.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Junbyeong\Messenger\src\Messenger" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Messenger" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="이름이 지정되지 않았습니다" type="Application" factoryName="Application" nameIsGenerated="true">
-      <module name="GroupChat_Project" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application" singleton="false">
-      <module name="GroupChat_Project" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="b85c91fa-ba4e-4eca-b740-5c1c7b70dc8e" name="변경" comment="" />
-      <created>1730606190236</created>
+      <changelist id="060dda6a-cd81-4feb-a3af-1874c3010b90" name="변경" comment="" />
+      <created>1729499647071</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1730606190236</updated>
+      <updated>1729499647071</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Messenger/src/Messenger/MessengerMain.java</url>
-          <line>354</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,5 +1,6 @@
 package ProjectCode;
 
+import javax.swing.table.DefaultTableModel;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -8,8 +9,9 @@ import java.net.Socket;
 public class ClientProtocol implements Runnable {
     // 클라이언트 소켓, 입출력 스트림 선언
     private Socket clientSocket = null;
-    private ObjectInputStream in = null;
+    ObjectInputStream in = null;
     private ObjectOutputStream out = null;
+    ServerMain sm = new ServerMain();
     String msg = null;
     private UIMain cui = null;
 
@@ -27,7 +29,7 @@ public class ClientProtocol implements Runnable {
             clientSocket = new Socket("localhost", 3000);
             in = new ObjectInputStream(clientSocket.getInputStream());
             out = new ObjectOutputStream(clientSocket.getOutputStream());
-            System.out.println("Connect to Server.....");
+            sm.jta_log.append("Connect to Server\n" + sm.setDays());
 
             new Thread(this).start();
         } catch (IOException e) {
@@ -39,13 +41,14 @@ public class ClientProtocol implements Runnable {
 
     // 프로토콜에 따른 입력스트림 처리
     @Override
-    public void run() {
+    public void run() { //200 : 입장, 300 : 나가기, 방목록 : 400, 방 변경 : 401,
         try {
             while((msg = (String) in.readObject()) != null) {
                 System.out.println("수신정보 | " + msg);
+                // MsgSend#키위
                 String[] strArray = msg.split("#", 2);
-                String protocol = strArray[0];
-                String content = strArray[1];
+                String protocol = strArray[0];//100
+                String content = strArray[1];//키위
 
                 // 입력 스트림을 통한 RoomList 업데이트 진행
                 if (protocol.equals("MsgSend")) {

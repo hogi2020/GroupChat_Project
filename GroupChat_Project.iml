@@ -9,12 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ojdbc6" level="project" />
-    <orderEntry type="library" name="gson-2.8.9" level="project" />
-    <orderEntry type="library" name="jackson-annotations-2.13.3" level="project" />
-    <orderEntry type="library" name="json-20210307" level="project" />
-    <orderEntry type="library" name="lombok-1.18.34" level="project" />
-    <orderEntry type="library" name="mybatis-3.5.9" level="project" />
-    <orderEntry type="library" name="okhttp-3.14.9" level="project" />
-    <orderEntry type="library" name="okio-1.17.6" level="project" />
+    <orderEntry type="library" name="GroupChat_Project" level="project" />
   </component>
 </module>

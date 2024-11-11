@@ -50,7 +50,7 @@ public class ServerThread implements Runnable {
             StringTokenizer stz = new StringTokenizer(msg, "#");
             stz.nextToken(); //미정, 사용자 대화 받아오기
             Nickname = stz.nextToken(); //닉네임 받아오기
-            sm.jta_log.append(Nickname + " 님이 이리오너라~~ 를 시전했습니다. \n"); //입장시 나오는 문구
+            sm.jta_log.append(Nickname + " 입장\n"); //입장시 나오는 문구
 
             for (ServerThread st:sm.stl){ //
                 this.send("수신정보" + "#" + st.Nickname);
@@ -89,9 +89,11 @@ public class ServerThread implements Runnable {
                             // outStream.writeObject("MsgSend#" + content);
                             break;
                         case "Create":      /// 그룹창 생성
+                            sm.jta_log.append(sm.setDays() + "\n");
                             sdm.createRoom(content);
                             break;
                         case "Join":
+                            sm.jta_log.append(sm.setDays() + "\n");
                             sdm.ClientToRoom(outStream, content);
                             roomMsg = sdm.getRoomMsg(content);
                             roomMsg.addClient(outStream, content);
@@ -101,9 +103,8 @@ public class ServerThread implements Runnable {
                             break;
                     }
                 }
-                for (pro = 200; pro <= 400; pro++){
-                    switch (pro){
-                        case 200:{
+                switch (pro){
+                        case 200:{ //200 : 입장, 300 : 나가기, 방목록 : 400, 방 변경 : 401,
 
                         }break;
                         case 201:
@@ -125,6 +126,7 @@ public class ServerThread implements Runnable {
                         default:
                             System.out.println("방 인원수가 최대치 입니다.");
                             break;
+//
 //                        case 201:{
 //                            String nickName = stz2.nextToken();
 //                            String message = stz2.nextToken();
@@ -149,7 +151,7 @@ public class ServerThread implements Runnable {
 //                            System.out.println("방 인원수가 최대치 입니다.");
 //                            break;
                     }
-                }
+
                 if (stz2.hasMoreTokens()){
                     String nickName = stz2.nextToken();
                     sm.stl.remove(this);

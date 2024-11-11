@@ -1,5 +1,7 @@
 package originCode;
 
+import ProjectCode.ServerMain;
+
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -9,8 +11,7 @@ public class ServerRoomMsg {
     private String roomName;
     CopyOnWriteArrayList<ObjectOutputStream> joinClients;  // 방의 클라이언트 리스트
     CopyOnWriteArrayList<String> msgArray;                 // 방의 메세지 리스트
-
-
+    ServerMain sm = new ServerMain();
     // 생성자
     public ServerRoomMsg (String roomName) {
         this.roomName = roomName;
@@ -40,7 +41,7 @@ public class ServerRoomMsg {
         // 채팅방 입장 메세지 전송
         for (ObjectOutputStream outStream : joinClients) {
             try {
-                outStream.writeObject("MsgSend#>>["+roomName+"]에 입장하였습니다.");
+                outStream.writeObject("MsgSend#>>["+roomName+"]에 입장하였습니다. ");
             } catch (IOException e) {
                 System.out.println("roomNameMsg 오류 | " + e.getMessage());
             }
