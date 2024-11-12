@@ -107,12 +107,11 @@ public class MessengerUI extends JFrame {
     public JList<String> getEnterRoom() {return list_room;}
 }
 
-/************** 미구현
- // Rename Class
- class Rename extends JFrame {
+/************** 닉네임 변경 미구현 중...
+ // Rename Class  Rename extends JFrame {
  JTextField renickname;
  JButton insert_button;
- Font font = new Font("netmarble Medium", Font.PLAIN, 15);
+ Font font = new Font("netmarble Medium", Font. PLAIN, 15);
  String imagePath = "C:\\workspace_java\\Messenger\\src\\image\\";
  ImageIcon img = new ImageIcon(imagePath + "renic.png");
 

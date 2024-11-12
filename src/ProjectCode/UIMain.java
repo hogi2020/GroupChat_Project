@@ -1,17 +1,13 @@
 package ProjectCode;
 
 public class UIMain {
-
     ClientProtocol op = new ClientProtocol(this);
     InsertNickname insertNickname = new InsertNickname();
     MessengerUI ui = new MessengerUI();
     CustomActionListener actionListener = new CustomActionListener(insertNickname, ui, this, op);
-
+    //Rename rename = new Rename();
     public static void main(String[] args) {
         UIMain uiMain = new UIMain();
-
-
-        //Rename rename = new Rename();
 
         // Add action listeners
         uiMain.insertNickname.getInsertButton().setActionCommand("insert_nickname");
@@ -24,11 +20,10 @@ public class UIMain {
         uiMain.ui.getMsgInsertField().setActionCommand("send_message");
         uiMain.ui.getMsgInsertField().addActionListener(uiMain.actionListener);
         uiMain.ui.getEnterRoom().addMouseListener(uiMain.actionListener);
-        //ui.getRenameButton().setActionCommand("rename_nickname");
-        //ui.getRenameButton().addActionListener(actionListener);
         uiMain.ui.getCreateRoom().setActionCommand("create_room");
         uiMain.ui.getCreateRoom().addActionListener(uiMain.actionListener);
-
+        //ui.getRenameButton().setActionCommand("rename_nickname");
+        //ui.getRenameButton().addActionListener(actionListener);
         /*
         rename.getRenameButton().setActionCommand("rename");
         rename.getRenameButton().addActionListener(actionListener);
@@ -36,7 +31,6 @@ public class UIMain {
         rename.getRenameField().addActionListener(actionListener);
         */
 
-        // Initially, only show InsertNickname window
         uiMain.insertNickname.setVisible(true);
         uiMain.ui.setVisible(false);
         //rename.setVisible(false);
