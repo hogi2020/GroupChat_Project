@@ -1,4 +1,4 @@
-package messanger;
+package sampleProjectCode;
 
 import com.util.DBConnectionMgr;
 import java.sql.Connection;

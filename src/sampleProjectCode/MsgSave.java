@@ -1,14 +1,10 @@
 package sampleProjectCode;
 
-import messanger.TalkDao;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.sql.Timestamp;
-import java.util.Date;
 import java.util.List;
 
 public class MsgSave extends JFrame {
@@ -18,18 +14,16 @@ public class MsgSave extends JFrame {
     private JButton sendButton;
     private JList<String> roomList;
 
-    private TalkDao talkDao; // TalkDao 객체 선언
+    private sampleProjectCode.TalkDao talkDao = new sampleProjectCode.TalkDao();
+    private String nick_ip = "user1"; // 예시 사용자 IP
 
     public MsgSave() {
-        // TalkDao 객체 생성
-        talkDao = new TalkDao();
-
         // GUI 초기화
         frame = new JFrame("메신저");
         chatArea = new JTextArea();
         messageField = new JTextField(30);
         sendButton = new JButton("전송");
-        roomList = new JList<>(new String[]{"NULL", "dsf"});
+        roomList = new JList<>(new String[]{"room1", "room2"}); // 예시 대화방 목록
 
         JPanel panel = new JPanel();
         panel.add(messageField);
@@ -66,11 +60,12 @@ public class MsgSave extends JFrame {
 
     // 프로그램 시작 시 이전 메시지를 데이터베이스에서 불러오는 메서드
     private void loadMessages() {
-        String chatRoom = roomList.getSelectedValue();
-        if (chatRoom == null) return;
+        String talk_room_id = roomList.getSelectedValue();
+        if (talk_room_id == null) return;
 
-        // TalkDao를 통해 메시지 불러오기
-        List<String> messages = talkDao.getMessages(chatRoom);
+        // talkDao를 통해 메시지 불러오기
+        List<String> messages = talkDao.getMessages(talk_room_id);
+        chatArea.setText("");
         for (String message : messages) {
             chatArea.append(message + "\n");
         }
@@ -79,29 +74,19 @@ public class MsgSave extends JFrame {
     // 메시지 전송 및 데이터베이스 저장
     private void sendMessage() {
         String messageText = messageField.getText();
-        String userName = "dfas"; // 예시로 사용자가 'dfas'라고 가정
-        String chatRoom = roomList.getSelectedValue();
-        Timestamp timestamp = new Timestamp(new Date().getTime());
+        String talk_room_id = roomList.getSelectedValue();
 
-        if (messageText.isEmpty() || chatRoom == null) return;
+        if (messageText.isEmpty() || talk_room_id == null) return;
 
-        // 채팅창에 메시지 표시
-        chatArea.append(userName + " : " + messageText + " " + timestamp + "\n");
-        messageField.setText("");
-
-        // TalkDao를 통해 메시지 전송
-        talkDao.sendMessage(userName, chatRoom, messageText);
+        // 메시지 전송
+        int result = talkDao.sendMessage(nick_ip, talk_room_id, messageText);
+        if (result > 0) {
+            chatArea.append("You: " + messageText + "\n");
+            messageField.setText("");
+        }
     }
 
     public static void main(String[] args) {
         MsgSave msgSave = new MsgSave();
-
-        // 윈도우 닫기 이벤트 리스너 추가하여 종료 시 데이터베이스 연결 닫기
-        msgSave.frame.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                System.exit(0);
-            }
-        });
     }
 }
