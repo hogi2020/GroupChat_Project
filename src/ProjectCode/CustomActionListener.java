@@ -14,6 +14,7 @@ public class CustomActionListener  extends Component implements ActionListener, 
     private String nickname;
     private ClientProtocol op;
     public UIMain uiMain;
+    ServerMain sm = new ServerMain();
 
     public CustomActionListener(InsertNickname insertNickname, MessengerUI ui/*, Rename rename*/, UIMain uiMain, ClientProtocol op) {
         this.insertNickname = insertNickname;
