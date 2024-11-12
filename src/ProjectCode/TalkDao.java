@@ -1,10 +1,6 @@
-<<<<<<< HEAD:src/ProjectCode/TalkDao.java
 package ProjectCode;
 
 import ProjectDBCode.DBConnectionMgr;
-=======
-package sampleProjectCode;
->>>>>>> 8b9d6afd0f925d30116b5b4f77b4bc6e0f8406db:src/sampleProjectCode/TalkDao.java
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

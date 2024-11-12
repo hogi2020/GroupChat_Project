@@ -1,4 +1,6 @@
-package sampleProjectCode;
+package ProjectCode;
+
+import ProjectCode.TalkDao;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -14,7 +16,7 @@ public class MsgSave extends JFrame {
     private JButton sendButton;
     private JList<String> roomList;
 
-    private sampleProjectCode.TalkDao talkDao = new sampleProjectCode.TalkDao();
+    private TalkDao talkDao = new TalkDao();
     private String nick_ip = "user1"; // 예시 사용자 IP
 
     public MsgSave() {
