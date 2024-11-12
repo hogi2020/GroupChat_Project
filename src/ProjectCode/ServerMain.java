@@ -1,5 +1,8 @@
 package ProjectCode;
 
+import ProjectDBCode.DBConnectionMgr;
+import ProjectDBCode.ProjectDAO;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -17,6 +20,7 @@ public class ServerMain extends JFrame implements ActionListener {
     List<ServerThread> stl = null;
     Socket clientSocket;
     ServerDataMng sdm;
+    ProjectDAO pdao;
 
     //서버로그 보여주는 창 선언
     JTextArea jta_log = new JTextArea(10,50); //서버 로그를 보여주는 창
@@ -39,7 +43,7 @@ public class ServerMain extends JFrame implements ActionListener {
                 System.out.println("클라이언트 접속 | " + clientSocket.getInetAddress());
 
                 // ServerThread 클래스의 run()스레드 생성
-                new Thread(new ServerThread(clientSocket, sdm, this)).start();
+                new Thread(new ServerThread(clientSocket, sdm, this)).start(); //pdao
             }
         } catch (IOException e) {
             System.out.println("서버 작동 중 오류 발생: " + e.getMessage());
@@ -76,6 +80,7 @@ public class ServerMain extends JFrame implements ActionListener {
         ServerMain sm = new ServerMain();
         sm.initDisplay();
         sm.ServerStart();
+        System.out.println(sm.stl);
     }
 
     @Override

@@ -99,6 +99,9 @@ public class ProjectDAO {
         return tfNum;
     }
 
-
+//    public static void main(String[] args) {
+//        ProjectDAO pr = new ProjectDAO();
+//        pr.insertMem("192.168.0.31","KKK","123123");
+//    }
 
 }

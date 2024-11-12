@@ -1,5 +1,8 @@
 package ProjectCode;
 
+import ProjectDBCode.ProjectDAO;
+
+import javax.lang.model.element.NestingKind;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -13,14 +16,18 @@ public class ServerThread implements Runnable {
     ObjectOutputStream outStream;
     ObjectInputStream inStream;
     ServerDataMng sdm;
-    String Nickname = null; //서버에 입장한 클러이언트 스레드 닉네임 저장하는 코드
+    ProjectDAO pdao;
+    String IP = null; //서버에 입장한 IP 저장
+    String nickName = null; //서버에 입장한 클러이언트 스레드 닉네임 저장하는 코드
+    String PW = null; //서버에 입장 PW 저장
 
     // 생성자 | 서버 소켓
     public ServerThread() {}
-    public ServerThread(Socket socket, ServerDataMng sdm, ServerMain sm) {
+    public ServerThread(Socket socket, ServerDataMng sdm, ServerMain sm) { // ProjectDAO pdao
         this.sm = sm;
         this.clientSocket = socket;
         this.sdm = sdm;
+//        this.pdao = pdao;
     }
 
     //현재 입장해 있는 친구들 모두에게 메시지 전송하기 구현
@@ -49,11 +56,13 @@ public class ServerThread implements Runnable {
             sm.jta_log.append(msg + "\n"); //메시지를 로그에 보이기
             StringTokenizer stz = new StringTokenizer(msg, "#");
             stz.nextToken(); //미정, 사용자 대화 받아오기
-            Nickname = stz.nextToken(); //닉네임 받아오기
-            sm.jta_log.append(Nickname + " 입장\n"); //입장시 나오는 문구
+//            IP = stz.nextToken(); //IP 받아오기
+//            PW = stz.nextToken(); //PW 받아오기
+            nickName = stz.nextToken(); //닉네임 받아오기
+            sm.jta_log.append(nickName + " 입장\n"); //입장시 나오는 문구
 
             for (ServerThread st:sm.stl){ //
-                this.send("수신정보" + "#" + st.Nickname);
+                this.send("수신정보" + "#" + st.nickName ); //+ "#" + st.IP + "#" + st.PW
             }
             sm.stl.add(this);
             this.broadCasting(msg);
@@ -97,68 +106,14 @@ public class ServerThread implements Runnable {
                             sdm.ClientToRoom(outStream, content);
                             roomMsg = sdm.getRoomMsg(content);
                             roomMsg.addClient(outStream, content);
-
                             roomName = sdm.getRoomName(outStream);
                             roomMsg.broadcastMsg(roomName);
                             break;
                     }
                 }
-                switch (pro){
-                        case 200:{ //200 : 입장, 300 : 나가기, 방목록 : 400, 방 변경 : 401,
-
-                        }break;
-                        case 201:
-                            if (stz2.hasMoreTokens()) {
-                                String nickName = stz2.nextToken();
-                                String message = stz2.hasMoreTokens() ? stz2.nextToken() : "";
-                                broadCasting(pro + " # " + nickName + " # " + message);
-                            }
-                            break;
-                        case 202:
-                            if (stz2.hasMoreTokens()) {
-                                String nickName = stz2.nextToken();
-                                String afterName = stz2.hasMoreTokens() ? stz2.nextToken() : "";
-                                String message = stz2.hasMoreTokens() ? stz2.nextToken() : "";
-                                this.Nickname = afterName;
-                                broadCasting(pro + " # " + nickName + " # " + afterName + " # " + message);
-                            }
-                            break;
-                        default:
-                            System.out.println("방 인원수가 최대치 입니다.");
-                            break;
-//
-//                        case 201:{
-//                            String nickName = stz2.nextToken();
-//                            String message = stz2.nextToken();
-//                            broadCasting(201
-//                                    +"#"+nickName
-//                                    +"#"+message);
-//                        }break;
-//                        case 202:{
-//                            String nickName = stz2.nextToken();
-//                            String afterName = stz2.nextToken();
-//                            String message = stz2.nextToken();
-//                            this.Nickname = afterName;
-//                            broadCasting(pro +"#" + nickName + "#"+afterName + "#"+message);
-//                        } break;
-//                        case 500:{
-//                            String nickName = stz2.nextToken();
-//                            sm.stl.remove(this);
-//                            broadCasting(500 + "#" + nickName);
-//                            break;
-//                        }
-//                        default:
-//                            System.out.println("방 인원수가 최대치 입니다.");
-//                            break;
-                    }
-
-                if (stz2.hasMoreTokens()){
-                    String nickName = stz2.nextToken();
-                    sm.stl.remove(this);
-                    broadCasting(500 + "#" + nickName);
-                }
             }
-        } catch (IOException | ClassNotFoundException e) {
+        }
+        catch (IOException | ClassNotFoundException e) {
             System.out.println("입출력 오류 발생 | " + e.getMessage());
         }
     }
