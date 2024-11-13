@@ -31,12 +31,8 @@ public class UICustomActionListener extends Component implements ActionListener,
             nickname = nicknameField.getText();
             if (nickname.length() > 0 && nickname.length() <= 10) {
                 insertNickname.dispose();
-<<<<<<< HEAD:src/ProjectCode/UICustomActionListener.java
                 op.sendMsg("MsgSend#" + nickname + " " + sm.setDays());
                 ui.setTitle(nickname +"님의 대화창");
-=======
-                ui.setTitle(nickname + "님의 대화창");
->>>>>>> d418456e7a6b48fdf145eae14ee812582630c568:src/ProjectCode/CustomActionListener.java
                 ui.setVisible(true);
                 ui.msg_insert.requestFocusInWindow();
 
@@ -48,12 +44,8 @@ public class UICustomActionListener extends Component implements ActionListener,
             JTextArea msg_display = ui.getMsgDisplay();
             String message = msgInsertField.getText();
             if (!message.trim().isEmpty()) {
-<<<<<<< HEAD:src/ProjectCode/UICustomActionListener.java
                 JTextArea msgDisplay = ui.getMsgDisplay();
                 op.sendMsg("MsgSend#" + nickname + " : " + message + " " + sm.setDays() + "\n");  // 메세지 보내기
-=======
-                op.sendMsg("MsgSend#" + nickname + " :\n" + message + "\n");  // 메세지 보내기
->>>>>>> d418456e7a6b48fdf145eae14ee812582630c568:src/ProjectCode/CustomActionListener.java
                 msgInsertField.setText("");  // 텍스트필드 초기화
                 msg_display.setText("");
 
