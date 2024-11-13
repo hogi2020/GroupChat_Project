@@ -87,9 +87,6 @@ public class ServerMain extends JFrame implements ActionListener {
     public static void main(String[] args) {
         new ServerMain();
     }
-
     @Override
-    public void actionPerformed(ActionEvent e) {
-
-    }
+    public void actionPerformed(ActionEvent e) {}
 }
