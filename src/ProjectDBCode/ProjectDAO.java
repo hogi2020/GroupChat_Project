@@ -11,6 +11,28 @@ public class ProjectDAO {
     int tfNum = -1;     // 성공은 1, 실패는 0
 
 
+    public void insertUserInfo(String mem_ip, String mem_nick){
+        sql = "insert into UserInfo (mem_ip, mem_nick) VALUES (?, ?)";
+
+        try {
+            conn = dbMgr.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, mem_ip);
+            pstmt.setString(2, mem_nick);
+            tfNum = pstmt.executeUpdate();
+        }
+        catch (SQLException se){
+
+        }
+        catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        finally {
+            dbMgr.freeConnection(conn, pstmt);
+        }
+
+    }
+
     // Database 데이터 입력 메서드
     public void insertMem(String mem_ip, String mem_nick, String mem_pw) {
         sql = "insert into member values (?,?,?)";

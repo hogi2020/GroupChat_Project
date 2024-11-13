@@ -27,6 +27,11 @@ public class ServerMain extends JFrame implements ActionListener {
     JScrollPane jsp_log = new JScrollPane(jta_log, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER); //서버 로그가 많아 지면 스크롤한다.
     JPanel jp_north = new JPanel();
 
+    public void AccountInfo(String IP, String nickName) {
+        stl.toString();
+
+    }
+
     // 서버 실행 및 클라이언트 접속
     public void ServerStart() {
         stl = new Vector<>();
