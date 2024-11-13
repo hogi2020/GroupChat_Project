@@ -6,7 +6,7 @@ public class DBConnectionMgr {
 
     // Oracle DB Connection info
     public final String _DRIVER = "oracle.jdbc.driver.OracleDriver";
-    public final String _URL = "jdbc:oracle:thin:@192.168.0.31                              :1521:orcl11";
+    public final String _URL = "jdbc:oracle:thin:@192.168.0.36:1521:orcl11";
     public final String _USER = "scott";
     public final String _PW = "tiger";
 
@@ -36,8 +36,15 @@ public class DBConnectionMgr {
             // 즉 JDBC 클래스가 정적 블록에 실행되어 DB연결을  초기화하는 역할을 합니다.
             // Class.forName(_DRIVER);
             conn = DriverManager.getConnection(_URL, _USER, _PW);
+            if (conn != null) {
+                System.out.println("연결 성공");
+            }
+            else {
+                System.out.println("연결 실패");
+            }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("연결중 오류 발생" + e.getMessage());
+            //e.printStackTrace();
         }
         return conn;
     }
@@ -64,9 +71,8 @@ public class DBConnectionMgr {
         }
     }
 
-
-    public static void main(String[] args) {
-        DBConnectionMgr dbMgr = DBConnectionMgr.getInstance();
-        dbMgr.getConnection();
-    }
+//    public static void main(String[] args) {
+//        DBConnectionMgr dbMgr = new DBConnectionMgr();
+//        dbMgr.getConnection();
+//    }
 }
