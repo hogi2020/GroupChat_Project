@@ -21,11 +21,11 @@ public class ServerThread implements Runnable {
 
     // 생성자 | 서버 소켓
     public ServerThread() {}
-    public ServerThread(Socket socket, ServerDataMng sdm, ServerMain sm) { // ProjectDAO pdao
+    public ServerThread(Socket socket, ServerDataMng sdm, ServerMain sm, ProjectDAO pdao) {
         this.sm = sm;
         this.clientSocket = socket;
         this.sdm = sdm;
-//        this.pdao = pdao;
+        this.pdao = pdao;
     }
 
     //모든 클라이언트 메시지 보내기

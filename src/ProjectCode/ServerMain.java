@@ -48,10 +48,11 @@ public class ServerMain extends JFrame implements ActionListener {
                 System.out.println("클라이언트 접속 | " + clientSocket.getInetAddress());
 
                 // ServerThread 클래스의 run()스레드 생성
-                new Thread(new ServerThread(clientSocket, sdm, this)).start(); //pdao
+                new Thread(new ServerThread(clientSocket, sdm, this, pdao)).start(); //pdao
             }
         } catch (IOException e) {
             System.out.println("서버 작동 중 오류 발생: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
