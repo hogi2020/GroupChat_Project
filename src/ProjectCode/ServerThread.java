@@ -61,7 +61,7 @@ public class ServerThread implements Runnable {
             pdao.insertUserInfo(clientIP, nickName); //DB에 닉네임과 IP저장
 
             for (ServerThread st:sm.stl){ //
-                this.send("수신정보" + "#" + st.nickName );
+                this.send("수신정보" + "#" + st.nickName);
             }
             sm.stl.add(this); //나머지 클라이언트들에게 메시지 브로드캐스팅
             this.broadCasting(msg);

@@ -17,7 +17,7 @@ import java.util.Vector;
 public class ServerMain extends JFrame implements ActionListener {
     // 선언부
     ServerThread st = null;
-    List<ServerThread> stl = null;
+    List<ServerThread> stl;
     Socket clientSocket;
     ServerDataMng sdm;
     ProjectDAO pdao;
@@ -27,14 +27,9 @@ public class ServerMain extends JFrame implements ActionListener {
     JScrollPane jsp_log = new JScrollPane(jta_log, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER); //서버 로그가 많아 지면 스크롤한다.
     JPanel jp_north = new JPanel();
 
-    public void AccountInfo(String IP, String nickName) {
-        stl.toString();
-
-    }
-
     // 서버 실행 및 클라이언트 접속
     public void ServerStart() {
-        stl = new Vector<>();
+//        stl = new Vector<>();
         try(ServerSocket ss = new ServerSocket(3000)) {
             jta_log.append("Ready to Server " + this.setDays() + "\n");
 
@@ -81,12 +76,16 @@ public class ServerMain extends JFrame implements ActionListener {
                 + " " + (hour < 10 ? "0" + hour:""+hour) + ":" + (minute < 10 ? "0" + minute:""+minute);
     }
 
+    public ServerMain() {
+        stl = new Vector<>();
+        pdao = new ProjectDAO();
+        initDisplay();
+        this.ServerStart();
+    }
+
     // 메인 메소드 실행
     public static void main(String[] args) {
-        ServerMain sm = new ServerMain();
-        sm.initDisplay();
-        sm.ServerStart();
-        System.out.println(sm.stl);
+        new ServerMain();
     }
 
     @Override
