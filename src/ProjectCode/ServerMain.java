@@ -77,6 +77,9 @@ public class ServerMain extends JFrame implements ActionListener {
         sm.initDisplay();
         sm.ServerStart();
     }
+
     @Override
-    public void actionPerformed(ActionEvent e) {}
+    public void actionPerformed(ActionEvent e) {
+
+    }
 }
