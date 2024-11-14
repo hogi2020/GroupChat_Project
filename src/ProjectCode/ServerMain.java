@@ -31,6 +31,7 @@ public class ServerMain extends JFrame implements ActionListener {
     public void ServerStart() {
         stl = new Vector<>();
         pdao = new ProjectDAO();
+
         try(ServerSocket ss = new ServerSocket(3000)) {
             jta_log.append("Ready to Server " + this.setDays() + "\n");
 
@@ -76,6 +77,13 @@ public class ServerMain extends JFrame implements ActionListener {
         return yyyy+ "-" + (mm < 10 ? "0"+mm:""+mm) + "-" + (day < 10 ? "0"+day:""+day)
                 + " " + (hour < 10 ? "0" + hour:""+hour) + ":" + (minute < 10 ? "0" + minute:""+minute);
     }
+
+    /*public ServerMain() {
+        initDisplay();
+        this.ServerStart();
+        stl = new Vector<>();
+        pdao = new ProjectDAO();
+    }*/
 
     // 메인 메소드 실행
     public static void main(String[] args) {
