@@ -1,7 +1,5 @@
 # GroupChat_Project
 
-
-
 ## 단체 채팅 프로그램 개발 계획서
 
 ### 1. **프로젝트 개요**
@@ -89,7 +87,7 @@
 #### 7. **추가 고려사항**
 - **보안**: 데이터 암호화 및 안전한 연결 보장을 위한 SSL/TLS 적용 검토.
 - **확장성**: 추후 파일 전송, 사용자 프로필 설정, 방 만들기 등의 추가 기능을 고려.
-=======
+
 **Project Management Link :** [Chat Project TimeLine Link | Click!!!](https://docs.google.com/spreadsheets/d/1IYySTJvefOVfoQwdsIm4xq4j5l2pxkdAC0cG4n1HPgk/edit?usp=sharing)
 
 <br />
@@ -106,7 +104,6 @@
   - 서버-클라이언트 간 실시간 메시지 전송
   - 멀티 클라이언트 지원 (다중 사용자 접속)
   - 메시지 브로드캐스팅 (서버가 받은 메시지를 모든 클라이언트에 전송)
->>>>>>> origin/develop
 
 ---
 
@@ -207,7 +204,7 @@
 - **JDBC** : 서버와 데이터베이스 연동.
 - **소켓 프로그래밍** : 서버-클라이언트 간 통신 구현.
 - **멀티스레드** : 서버와 클라이언트에서 비동기 처리를 위한 쓰레드 관리.
-- **IDE** : IntelliJ, eclipse, Toad
+- **IDE** : IntelliJ(Java), Toad(OrecleDB)
 
 ---
 
