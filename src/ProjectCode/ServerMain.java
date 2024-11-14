@@ -29,7 +29,8 @@ public class ServerMain extends JFrame implements ActionListener {
 
     // 서버 실행 및 클라이언트 접속
     public void ServerStart() {
-//        stl = new Vector<>();
+        stl = new Vector<>();
+        pdao = new ProjectDAO();
         try(ServerSocket ss = new ServerSocket(3000)) {
             jta_log.append("Ready to Server " + this.setDays() + "\n");
 
@@ -76,16 +77,11 @@ public class ServerMain extends JFrame implements ActionListener {
                 + " " + (hour < 10 ? "0" + hour:""+hour) + ":" + (minute < 10 ? "0" + minute:""+minute);
     }
 
-    public ServerMain() {
-        stl = new Vector<>();
-        pdao = new ProjectDAO();
-        initDisplay();
-        this.ServerStart();
-    }
-
     // 메인 메소드 실행
     public static void main(String[] args) {
-        new ServerMain();
+        ServerMain sm = new ServerMain();
+        sm.initDisplay();
+        sm.ServerStart();
     }
     @Override
     public void actionPerformed(ActionEvent e) {}

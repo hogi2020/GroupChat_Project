@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file." />
+    <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupChat_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GroupChat_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +32,12 @@
     &quot;assignee&quot;: &quot;hogi2020&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:hogi2020/basic1.git&quot;,
-    &quot;accountId&quot;: &quot;2bc07bb5-096c-42cc-9439-2998e8ab66c1&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/hogi2020/GroupChat_Project.git",
+    "accountId": "dea8166b-fb01-4afc-ad45-e39ecc802346"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -48,158 +52,163 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Amain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ApiExamSearchBlog.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ApiExamSearchBook.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BVOMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BookApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BookDao.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BookDaoTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BookDialog.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BookNaverSearch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BookVOTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Combo2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DeptMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DeptMain2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DuckSimulation.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JDialogMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JoinView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.List2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListMain1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListMain2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListMain3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LoginApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LoginForm.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MapTest1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MemberShipForm.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MessageRoom.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NaverBookSearch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NoticeDialog.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OjmClient.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OjmProtocol.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OjmServer.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OracleConnection.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OracleConnection01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OracleConnection2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.OracleConnection3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PC3Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PCMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Table1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Table2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TalkDao.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.This1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ZipCodeSearchForm.executor&quot;: &quot;Run&quot;,
-    &quot;Application.prac.executor&quot;: &quot;Run&quot;,
-    &quot;Application.quiz.step1.DeptMain.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workSpaceJava/basic1/lib/gson-2.8.9.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;애플리케이션.A.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.A1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.AMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.A_main.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Array1Main.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Array2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Array3.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.B.executor&quot;: &quot;Debug&quot;,
-    &quot;애플리케이션.BorderLayout1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.BorderLayout2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Bstr.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.C.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.CarCreate.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Casting1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.D.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.DeptMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.E.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.EmpSimulation.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Event1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.F.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.For2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.For3.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.G.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.GMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.H.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.IF1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.JFrame1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.JFrame2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.JFrameMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.JPanel1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.K5.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.KMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.KiwiLogin.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.KiwiSimulation.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.List1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.List2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.LoginForm.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.M.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.M1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.MemberMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.MultiServer.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.N.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.N1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.NoticeEdit.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.NoticeMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.NoticeMainTT.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.NoticeSub.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.NullPointer.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.OjmClient.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.OjmLogin.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.OjmServer.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.OjmSimulation.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Oper1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Oper4.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Parameter1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Pride.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q27.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q27_1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q28.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q28_1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q29.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q29_1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q3.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q35.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q3_1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Q3_2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.RandomGame1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.RandomGame2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Return1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Return1Main.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Runtime.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.SampleClient.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.SampleServer.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.SomeObject.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.StringTest2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.StringTest3.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.StringTest4.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.StringTest5.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.StringTest7.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.TableDataFunction.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.TestParam.executor&quot;: &quot;Debug&quot;,
-    &quot;애플리케이션.ThreadPrac.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.ThreadPrac3.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.TimeClient1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.TimeClient2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.TimeServer1.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.TimeServer2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.TimeView.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.TryCatch.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.XxxMain.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.XxxSub.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.talk.step1.KiwiLogin.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AMain.executor": "Run",
+    "Application.Amain.executor": "Run",
+    "Application.ApiExamSearchBlog.executor": "Run",
+    "Application.ApiExamSearchBook.executor": "Run",
+    "Application.BVOMain.executor": "Run",
+    "Application.BookApp.executor": "Run",
+    "Application.BookDao.executor": "Run",
+    "Application.BookDaoTest.executor": "Run",
+    "Application.BookDialog.executor": "Run",
+    "Application.BookNaverSearch.executor": "Run",
+    "Application.BookVOTest.executor": "Run",
+    "Application.Combo2.executor": "Run",
+    "Application.DeptMain.executor": "Run",
+    "Application.DeptMain2.executor": "Run",
+    "Application.DuckSimulation.executor": "Run",
+    "Application.JDialogMain.executor": "Run",
+    "Application.JoinView.executor": "Run",
+    "Application.List2.executor": "Run",
+    "Application.ListMain1.executor": "Run",
+    "Application.ListMain2.executor": "Run",
+    "Application.ListMain3.executor": "Run",
+    "Application.LoginApp.executor": "Run",
+    "Application.LoginForm.executor": "Run",
+    "Application.MapTest1.executor": "Run",
+    "Application.MemberShipForm.executor": "Run",
+    "Application.MessageRoom.executor": "Run",
+    "Application.NaverBookSearch.executor": "Run",
+    "Application.NoticeDialog.executor": "Run",
+    "Application.OjmClient.executor": "Run",
+    "Application.OjmProtocol.executor": "Run",
+    "Application.OjmServer.executor": "Run",
+    "Application.OracleConnection.executor": "Run",
+    "Application.OracleConnection01.executor": "Run",
+    "Application.OracleConnection2.executor": "Run",
+    "Application.OracleConnection3.executor": "Run",
+    "Application.PC3Main.executor": "Run",
+    "Application.PCMain.executor": "Run",
+    "Application.Table1.executor": "Run",
+    "Application.Table2.executor": "Run",
+    "Application.TalkDao.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.This1.executor": "Run",
+    "Application.ZipCodeSearchForm.executor": "Run",
+    "Application.prac.executor": "Run",
+    "Application.quiz.step1.DeptMain.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "kim__min__tae",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/workSpaceJava/basic1/lib/gson-2.8.9.jar",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.A.executor": "Run",
+    "애플리케이션.A1.executor": "Run",
+    "애플리케이션.AMain.executor": "Run",
+    "애플리케이션.A_main.executor": "Run",
+    "애플리케이션.Array1Main.executor": "Run",
+    "애플리케이션.Array2.executor": "Run",
+    "애플리케이션.Array3.executor": "Run",
+    "애플리케이션.B.executor": "Debug",
+    "애플리케이션.BorderLayout1.executor": "Run",
+    "애플리케이션.BorderLayout2.executor": "Run",
+    "애플리케이션.Bstr.executor": "Run",
+    "애플리케이션.C.executor": "Run",
+    "애플리케이션.CarCreate.executor": "Run",
+    "애플리케이션.Casting1.executor": "Run",
+    "애플리케이션.D.executor": "Run",
+    "애플리케이션.DeptMain.executor": "Run",
+    "애플리케이션.E.executor": "Run",
+    "애플리케이션.EmpSimulation.executor": "Run",
+    "애플리케이션.Event1.executor": "Run",
+    "애플리케이션.F.executor": "Run",
+    "애플리케이션.For2.executor": "Run",
+    "애플리케이션.For3.executor": "Run",
+    "애플리케이션.G.executor": "Run",
+    "애플리케이션.GMain.executor": "Run",
+    "애플리케이션.H.executor": "Run",
+    "애플리케이션.IF1.executor": "Run",
+    "애플리케이션.JFrame1.executor": "Run",
+    "애플리케이션.JFrame2.executor": "Run",
+    "애플리케이션.JFrameMain.executor": "Run",
+    "애플리케이션.JPanel1.executor": "Run",
+    "애플리케이션.K5.executor": "Run",
+    "애플리케이션.KMain.executor": "Run",
+    "애플리케이션.KiwiLogin.executor": "Run",
+    "애플리케이션.KiwiSimulation.executor": "Run",
+    "애플리케이션.List1.executor": "Run",
+    "애플리케이션.List2.executor": "Run",
+    "애플리케이션.LoginForm.executor": "Run",
+    "애플리케이션.M.executor": "Run",
+    "애플리케이션.M1.executor": "Run",
+    "애플리케이션.MemberMain.executor": "Run",
+    "애플리케이션.MultiServer.executor": "Run",
+    "애플리케이션.N.executor": "Run",
+    "애플리케이션.N1.executor": "Run",
+    "애플리케이션.NoticeEdit.executor": "Run",
+    "애플리케이션.NoticeMain.executor": "Run",
+    "애플리케이션.NoticeMainTT.executor": "Run",
+    "애플리케이션.NoticeSub.executor": "Run",
+    "애플리케이션.NullPointer.executor": "Run",
+    "애플리케이션.OjmClient.executor": "Run",
+    "애플리케이션.OjmLogin.executor": "Run",
+    "애플리케이션.OjmServer.executor": "Run",
+    "애플리케이션.OjmSimulation.executor": "Run",
+    "애플리케이션.Oper1.executor": "Run",
+    "애플리케이션.Oper4.executor": "Run",
+    "애플리케이션.Parameter1.executor": "Run",
+    "애플리케이션.Pride.executor": "Run",
+    "애플리케이션.Q27.executor": "Run",
+    "애플리케이션.Q27_1.executor": "Run",
+    "애플리케이션.Q28.executor": "Run",
+    "애플리케이션.Q28_1.executor": "Run",
+    "애플리케이션.Q29.executor": "Run",
+    "애플리케이션.Q29_1.executor": "Run",
+    "애플리케이션.Q3.executor": "Run",
+    "애플리케이션.Q35.executor": "Run",
+    "애플리케이션.Q3_1.executor": "Run",
+    "애플리케이션.Q3_2.executor": "Run",
+    "애플리케이션.RandomGame1.executor": "Run",
+    "애플리케이션.RandomGame2.executor": "Run",
+    "애플리케이션.Return1.executor": "Run",
+    "애플리케이션.Return1Main.executor": "Run",
+    "애플리케이션.Runtime.executor": "Run",
+    "애플리케이션.SampleClient.executor": "Run",
+    "애플리케이션.SampleServer.executor": "Run",
+    "애플리케이션.ServerMain.executor": "Run",
+    "애플리케이션.SomeObject.executor": "Run",
+    "애플리케이션.StringTest2.executor": "Run",
+    "애플리케이션.StringTest3.executor": "Run",
+    "애플리케이션.StringTest4.executor": "Run",
+    "애플리케이션.StringTest5.executor": "Run",
+    "애플리케이션.StringTest7.executor": "Run",
+    "애플리케이션.TableDataFunction.executor": "Run",
+    "애플리케이션.TestParam.executor": "Debug",
+    "애플리케이션.ThreadPrac.executor": "Run",
+    "애플리케이션.ThreadPrac3.executor": "Run",
+    "애플리케이션.TimeClient1.executor": "Run",
+    "애플리케이션.TimeClient2.executor": "Run",
+    "애플리케이션.TimeServer1.executor": "Run",
+    "애플리케이션.TimeServer2.executor": "Run",
+    "애플리케이션.TimeView.executor": "Run",
+    "애플리케이션.TryCatch.executor": "Run",
+    "애플리케이션.UIMain.executor": "Run",
+    "애플리케이션.XxxMain.executor": "Run",
+    "애플리케이션.XxxSub.executor": "Run",
+    "애플리케이션.talk.step1.KiwiLogin.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workSpaceJava\basic1\src\classes\day6" />
@@ -217,33 +226,7 @@
       <recent name="Notice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BookApp">
-    <configuration name="BookApp" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.book.BookApp" />
-      <module name="basic1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdbc.book.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.book.BookDaoTest" />
-      <module name="basic1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jdbc.book.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="애플리케이션.UIMain">
     <configuration name="BookVOTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jdbc.book.BookVOTest" />
       <module name="basic1" />
@@ -270,12 +253,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServerMain" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectCode.ServerMain" />
+      <module name="GroupChat_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Table2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="classes.database.Table2" />
       <module name="basic1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="classes.database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UIMain" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectCode.UIMain" />
+      <module name="GroupChat_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -291,13 +300,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BookApp" />
-        <item itemvalue="Application.BookDaoTest" />
-        <item itemvalue="Application.BookVOTest" />
-        <item itemvalue="Application.Table2" />
-        <item itemvalue="Application.OracleConnection01" />
+        <item itemvalue="애플리케이션.UIMain" />
+        <item itemvalue="애플리케이션.ServerMain" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -307,6 +321,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728379495742</updated>
+      <workItem from="1731578593358" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="update day4 java file.">
       <option name="closed" value="true" />
@@ -318,6 +333,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update day4 java file." />
