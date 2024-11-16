@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/MsgSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode2/MsgSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/ServerDataMng.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode2/TalkDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MemDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/ProjectDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/ProjectDAO.java" afterDir="false" />
-    </list>
+    <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +16,7 @@
         <option value="module-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -109,7 +100,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "kim__min__tae",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/project_hogi/GroupChat_Project",
