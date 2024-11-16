@@ -1,4 +1,4 @@
-package ProjectCode;
+package ProjectDBCode2;
 
 import ProjectDBCode.DBConnectionMgr;
 

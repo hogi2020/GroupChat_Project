@@ -1,12 +1,8 @@
-package ProjectCode;
-
-import ProjectCode.TalkDao;
+package ProjectDBCode2;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import java.util.List;
 
 public class MsgSave extends JFrame {

@@ -17,7 +17,6 @@ public class ProjectDAO {
 
     // Database 데이터 입력 메서드
     public void insertMem(String mem_ip, String mem_nick, String mem_pw) {
-        mem_pw = "123";
         sql = "insert into member values (?,?,?,?)";
 
         try {
@@ -41,7 +40,6 @@ public class ProjectDAO {
 
     // Database 데이터 삭제 메서드
     public void deleteMem(String mem_nick, String mem_pw) {
-        mem_pw = "123";
         sql = "delete from member where mem_nick = ? and mem_pw = ?";
 
         try {
@@ -64,7 +62,7 @@ public class ProjectDAO {
     // UPDATE [테이블] SET [열] = '변경할값' WHERE [조건]
     // Database 데이터 수정 메서드
     public void updateMem(String mem_ip, String update_nick, String update_pw) {
-        update_pw = "123";
+
         sql = "update member set mem_nick_change = mem_nick, mem_nick = ? where mem_ip = ? and mem_pw = ?";
 
         try {
@@ -92,7 +90,6 @@ public class ProjectDAO {
 
     // 로그인 정보 확인 메서드
     public int loginCheck(String nickName, int pw) {
-        pw = 123;
         try {
             // 1. 데이터베이스 연결
             conn = dbMgr.getConnection();

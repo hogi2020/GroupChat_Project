@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/MsgSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode2/MsgSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/ServerDataMng.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/UICustomActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/UICustomActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/TalkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode2/TalkDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MemDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/ProjectDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/ProjectDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +38,12 @@
     &quot;assignee&quot;: &quot;hogi2020&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/hogi2020/GroupChat_Project.git",
-    "accountId": "dea8166b-fb01-4afc-ad45-e39ecc802346"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hogi2020/GroupChat_Project.git&quot;,
+    &quot;accountId&quot;: &quot;dea8166b-fb01-4afc-ad45-e39ecc802346&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -106,7 +112,7 @@
     "git-widget-placeholder": "kim__min__tae",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/workSpaceJava/basic1/lib/gson-2.8.9.jar",
+    "last_opened_file_path": "C:/project_hogi/GroupChat_Project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -230,7 +236,7 @@
       <recent name="Notice" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.UIMain">
+  <component name="RunManager">
     <configuration name="BookVOTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jdbc.book.BookVOTest" />
       <module name="basic1" />
@@ -262,7 +268,7 @@
       <module name="GroupChat_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ProjectCode.*" />
+          <option name="PATTERN" value="ProjectDBCode2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -288,7 +294,7 @@
       <module name="GroupChat_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ProjectCode.*" />
+          <option name="PATTERN" value="ProjectDBCode2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -308,14 +314,6 @@
         <item itemvalue="애플리케이션.ServerMain" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

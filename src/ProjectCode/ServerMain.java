@@ -1,7 +1,7 @@
 package ProjectCode;
 
-import ProjectDBCode.DBConnectionMgr;
 import ProjectDBCode.ProjectDAO;
+import ProjectDBCode.ServerDataMng;
 
 import javax.swing.*;
 import java.awt.*;

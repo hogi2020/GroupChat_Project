@@ -60,7 +60,7 @@ public class ServerThread implements Runnable {
             String clientIP = clientSocket.getInetAddress().getHostAddress(); // IP주소 가져오기
             sm.jta_log.append(nickName + " 입장\n"); //입장시 나오는 문구
 
-            pdao.insertMem(clientIP, nickName, null); //DB에 닉네임과 IP저장
+            pdao.insertUserInfo(clientIP, nickName); //DB에 닉네임과 IP저장
 
             for (ServerThread st:sm.stl){ //
                 this.send("수신정보" + "#" + st.nickName);
