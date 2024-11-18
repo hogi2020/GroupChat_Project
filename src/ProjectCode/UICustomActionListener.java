@@ -45,7 +45,7 @@ public class UICustomActionListener extends Component implements ActionListener,
             String message = msgInsertField.getText();
             if (!message.trim().isEmpty()) {
                 JTextArea msgDisplay = ui.getMsgDisplay();
-                op.sendMsg("MsgSend#" + nickname + " : " + message + " " + sm.setDays() + "\n");  // 메세지 보내기
+                op.sendMsg("MsgSend#" + nickname + " : " + message + " " + "\n");  // 메세지 보내기
                 msgInsertField.setText("");  // 텍스트필드 초기화
                 msg_display.setText("");
 

@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file." />
+    <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerRoomMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerRoomMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/UICustomActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/UICustomActionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/ProjectDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/ProjectDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode2/MsgSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode2/MsgSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode2/TalkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode2/TalkDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/originCode/ClientUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/originCode/ClientUI.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +26,8 @@
       <list>
         <option value="module-info" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -100,10 +111,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "kim__min__tae",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/project_hogi/GroupChat_Project",
+    "last_opened_file_path": "C:/Users/KOSMO/Downloads/ohChat_v2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -128,6 +139,7 @@
     "애플리케이션.C.executor": "Run",
     "애플리케이션.CarCreate.executor": "Run",
     "애플리케이션.Casting1.executor": "Run",
+    "애플리케이션.ClientUI.executor": "Run",
     "애플리케이션.D.executor": "Run",
     "애플리케이션.DeptMain.executor": "Run",
     "애플리케이션.E.executor": "Run",
@@ -154,6 +166,8 @@
     "애플리케이션.M.executor": "Run",
     "애플리케이션.M1.executor": "Run",
     "애플리케이션.MemberMain.executor": "Run",
+    "애플리케이션.MsgSave (1).executor": "Run",
+    "애플리케이션.MsgSave.executor": "Run",
     "애플리케이션.MultiServer.executor": "Run",
     "애플리케이션.N.executor": "Run",
     "애플리케이션.N1.executor": "Run",
@@ -170,6 +184,7 @@
     "애플리케이션.Oper4.executor": "Run",
     "애플리케이션.Parameter1.executor": "Run",
     "애플리케이션.Pride.executor": "Run",
+    "애플리케이션.ProjectDAO.executor": "Run",
     "애플리케이션.Q27.executor": "Run",
     "애플리케이션.Q27_1.executor": "Run",
     "애플리케이션.Q28.executor": "Run",
@@ -227,13 +242,13 @@
       <recent name="Notice" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BookVOTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.book.BookVOTest" />
-      <module name="basic1" />
+  <component name="RunManager" selected="애플리케이션.UIMain">
+    <configuration name="ClientUI" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="originCode.ClientUI" />
+      <module name="GroupChat_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.book.*" />
+          <option name="PATTERN" value="originCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -241,12 +256,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OracleConnection01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.step2.OracleConnection01" />
-      <module name="basic1" />
+    <configuration name="MsgSave" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectDBCode2.MsgSave" />
+      <module name="GroupChat_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.step2.*" />
+          <option name="PATTERN" value="ProjectDBCode2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectDAO" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectDBCode.ProjectDAO" />
+      <module name="GroupChat_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectDBCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -260,19 +288,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ProjectDBCode2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Table2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.database.Table2" />
-      <module name="basic1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="classes.database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -303,8 +318,19 @@
       <list>
         <item itemvalue="애플리케이션.UIMain" />
         <item itemvalue="애플리케이션.ServerMain" />
+        <item itemvalue="애플리케이션.ClientUI" />
+        <item itemvalue="애플리케이션.ProjectDAO" />
+        <item itemvalue="애플리케이션.MsgSave" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -315,6 +341,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728379495742</updated>
       <workItem from="1731578593358" duration="758000" />
+      <workItem from="1731899997532" duration="14727000" />
     </task>
     <task id="LOCAL-00001" summary="update day4 java file.">
       <option name="closed" value="true" />

@@ -14,10 +14,8 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Vector;
 
-public class ServerMain extends JFrame implements ActionListener {
+public class ServerMain extends JFrame {
     // 선언부
-    ServerThread st = null;
-    List<ServerThread> stl;
     Socket clientSocket;
     ServerDataMng sdm;
     ProjectDAO pdao;
@@ -29,7 +27,6 @@ public class ServerMain extends JFrame implements ActionListener {
 
     // 서버 실행 및 클라이언트 접속
     public void ServerStart() {
-        stl = new Vector<>();
         pdao = new ProjectDAO();
 
         try(ServerSocket ss = new ServerSocket(3000)) {
@@ -61,7 +58,7 @@ public class ServerMain extends JFrame implements ActionListener {
 
         this.add("South",jp_north);
         this.add("Center",jsp_log);
-        this.setSize(700, 600);
+        this.setSize(700, 500);
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
@@ -78,19 +75,10 @@ public class ServerMain extends JFrame implements ActionListener {
                 + " " + (hour < 10 ? "0" + hour:""+hour) + ":" + (minute < 10 ? "0" + minute:""+minute);
     }
 
-    /*public ServerMain() {
-        initDisplay();
-        this.ServerStart();
-        stl = new Vector<>();
-        pdao = new ProjectDAO();
-    }*/
-
     // 메인 메소드 실행
     public static void main(String[] args) {
         ServerMain sm = new ServerMain();
         sm.initDisplay();
         sm.ServerStart();
     }
-    @Override
-    public void actionPerformed(ActionEvent e) {}
 }

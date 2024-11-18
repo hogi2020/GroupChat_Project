@@ -18,7 +18,7 @@ public class DBConnectionMgr {
 
     // Oracle DB Connection info
     public final String _DRIVER = "oracle.jdbc.driver.OracleDriver";
-    public final String _URL = "jdbc:oracle:thin:@localhost:1521:orcl11";
+    public final String _URL = "jdbc:oracle:thin:@192.168.0.36:1521:orcl11";
     public final String _USER = "scott";
     public final String _PW = "tiger";
 

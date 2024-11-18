@@ -14,6 +14,7 @@ public class MsgSave extends JFrame {
 
     private TalkDao talkDao = new TalkDao();
     private String nick_ip = "user1"; // 예시 사용자 IP
+    DBConnectionMgrJS dbMgr = new DBConnectionMgrJS();
 
     public MsgSave() {
         // GUI 초기화
@@ -22,6 +23,7 @@ public class MsgSave extends JFrame {
         messageField = new JTextField(30);
         sendButton = new JButton("전송");
         roomList = new JList<>(new String[]{"room1", "room2"}); // 예시 대화방 목록
+
 
         JPanel panel = new JPanel();
         panel.add(messageField);
