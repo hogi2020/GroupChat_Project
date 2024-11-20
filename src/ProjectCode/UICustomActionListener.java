@@ -13,7 +13,6 @@ public class UICustomActionListener extends Component implements ActionListener,
     private String nickname;
     private ClientProtocol op;
     public UIMain uiMain;
-    ServerMain sm = new ServerMain();
 
     public UICustomActionListener(InsertNickname insertNickname, UIMessenger ui, UIMain uiMain, ClientProtocol op) {
         this.insertNickname = insertNickname;

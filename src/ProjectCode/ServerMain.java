@@ -1,6 +1,5 @@
 package ProjectCode;
 
-import ProjectDBCode.ProjectDAO;
 import ProjectDBCode.ServerDataMng;
 
 import javax.swing.*;
@@ -18,7 +17,6 @@ public class ServerMain extends JFrame {
     // 선언부
     Socket clientSocket;
     ServerDataMng sdm;
-    ProjectDAO pdao;
 
     //서버로그 보여주는 창 선언
     JTextArea jta_log = new JTextArea(10,50); //서버 로그를 보여주는 창
@@ -27,7 +25,6 @@ public class ServerMain extends JFrame {
 
     // 서버 실행 및 클라이언트 접속
     public void ServerStart() {
-        pdao = new ProjectDAO();
 
         try(ServerSocket ss = new ServerSocket(3000)) {
             jta_log.append("Ready to Server " + this.setDays() + "\n");
@@ -42,7 +39,7 @@ public class ServerMain extends JFrame {
                 System.out.println("클라이언트 접속 | " + clientSocket.getInetAddress());
 
                 // ServerThread 클래스의 run()스레드 생성
-                new Thread(new ServerThread(clientSocket, sdm, this, pdao)).start(); //pdao
+                new Thread(new ServerThread(clientSocket, sdm, this)).start(); //pdao
             }
         } catch (IOException e) {
             System.out.println("서버 작동 중 오류 발생: " + e.getMessage());
