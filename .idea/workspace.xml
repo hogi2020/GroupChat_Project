@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file.">
+      <change afterPath="$PROJECT_DIR$/src/ProjectDBCode/ChatRoomDAO_Im.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProjectDBCode/MemberDAO_Im.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProjectDBCode/MessageDAO_Im.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/ChatDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/ChatRoomDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/ChatRoomDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MemDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MessageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/MessageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MsgDAO.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,6 +349,8 @@
       <workItem from="1732104577683" duration="405000" />
       <workItem from="1732152454255" duration="1040000" />
       <workItem from="1732167303443" duration="9356000" />
+      <workItem from="1732201525369" duration="1516000" />
+      <workItem from="1732203062654" duration="117000" />
     </task>
     <task id="LOCAL-00001" summary="update day4 java file.">
       <option name="closed" value="true" />

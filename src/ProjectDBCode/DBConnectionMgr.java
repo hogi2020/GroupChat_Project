@@ -18,10 +18,9 @@ public class DBConnectionMgr {
 
     // Oracle DB Connection info
     public final String _DRIVER = "oracle.jdbc.driver.OracleDriver";
-    public final String _URL = "jdbc:oracle:thin:@192.168.0.36:1521:orcl11";
+    public final String _URL = "jdbc:oracle:thin:@1localhost:1521:orcl11"; //192.168.0.36
     public final String _USER = "scott";
     public final String _PW = "tiger";
-
 
     // 생성자 설정
     private DBConnectionMgr() {
@@ -43,14 +42,12 @@ public class DBConnectionMgr {
         }
     }
 
-
     // Pool 초기화 선언
     private void initializeConnPool() throws SQLException {
         for (int i = 0; i < INIT_POOL_SIZE; i++) {
             connPoolQueue.offer(createNewConn());
         }
     }
-
 
     // DBConnection 타입의 변수를 선언
     // DBConnection 클래스에 대한 싱글톤 패턴 구현
@@ -69,7 +66,6 @@ public class DBConnectionMgr {
         }
         return dbMgr;
     }
-
 
     // Database 연동 메서드 생성
     /// 모든 자원이 사용되어 반환되지 않을 수 있으므로 타임아웃을 추가
@@ -91,7 +87,6 @@ public class DBConnectionMgr {
         }
     }
 
-
     private void releaseConn(Connection conn) {
         try {
             if (!conn.isClosed() && connPoolQueue.size() < MAX_POOL_SIZE) {
@@ -101,7 +96,6 @@ public class DBConnectionMgr {
             System.out.println("커넥션 반환 중 오류 발생 | " + e.getMessage());
         }
     }
-
 
     // 사용한 자원 반납하기
     // 생략 시, JVM의 가비지컬렉터가 대신 하지만, 명시적으로 구현하는 것을 권장

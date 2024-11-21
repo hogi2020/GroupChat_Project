@@ -10,34 +10,47 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class ServerDataMng {
     // 선언부
-    ChatRoomDAO chatRoomDao;
-    MemberDAO memDao;
-    MessageDAO msgDao;
+    MemberDAO_Im memDaoIm;
+    MessageDAO_Im msgDaoIm;
+    ChatRoomDAO_Im chatRoomDaoIm;
     ConcurrentHashMap<String, List<ObjectOutputStream>> roomMsgMap;    // RoomName, ClientList
     ConcurrentHashMap<String, ObjectOutputStream> clientInfoMap;    // nickName, OutputStream
 
     // 생성자
     public ServerDataMng() {
-        chatRoomDao = new ChatRoomDAO();
-        memDao = new MemberDAO();
-        msgDao = new MessageDAO();
+        memDaoIm = new MemberDAO_Im();
+        msgDaoIm = new MessageDAO_Im();
+        chatRoomDaoIm = new ChatRoomDAO_Im();
 
         roomMsgMap = new ConcurrentHashMap<>();
         clientInfoMap = new ConcurrentHashMap<>();
-    }
+    }/////////////// ServerDataMng
 
     /// /// Map 관련 메서드 집합 /// ///
+
+    public int loginCheck(String nickName, String pw, ObjectOutputStream outStream) {
+        // 로그인 성공 시 1 반환, 실패 시 0 반환
+        int password = 1;
+        if(memDaoIm.loginCheck(nickName, password) == 1) {
+            // 로그인에 성공하면 ClientList에 Outstream 추가
+            clientInfoMap.put(nickName, outStream);
+            return 1;
+        } else {
+            return 0;
+        }
+    }////////////////// loginCheck
+
     public String getIP(String nickName) {
-        return memDao.getMemIP(nickName);
+        return memDaoIm.getMemIP(nickName);
     }////////////////// getIP
 
     // 그룹창 생성 메서드
     public int createRoom(String mem_ip, String nickName, String roomName, String createMsg) {
         // 그룹 생성 | 중복이 아니면 1, 중복이면 0 반환
-        if (chatRoomDao.insertRoom(roomName) == 1) {
+        if (chatRoomDaoIm.insertRoom(roomName) == 1) {
             roomMsgMap.put(roomName, new CopyOnWriteArrayList<>());
-            chatRoomDao.enterRoom(nickName, roomName);
-            msgDao.insertMsg(createMsg, mem_ip, roomName);
+            chatRoomDaoIm.enterRoom(nickName, roomName);
+            msgDaoIm.insertMsg(createMsg, mem_ip, roomName);
             return 1;
         } else {
             return 0;
@@ -46,7 +59,7 @@ public class ServerDataMng {
 
     // RoomList -> 모든 클라이언트에게 전송
     public void broadcastRoomList(String protocolName) {
-        Collection<String> roomList = chatRoomDao.getRoomMap().values();
+        Collection<String> roomList = chatRoomDaoIm.getRoomMap().values();
         String roomListStr = String.join(",", roomList);
 //        String roomList = "RoomList#" + String.join(",", chatRoomMap.keySet());
 
@@ -59,11 +72,19 @@ public class ServerDataMng {
             System.out.println("broadcastRoomList 에러 발생 | " + e.getMessage());
 
         }
-    }
+    }//////////////// broadcastRoomList
+
+    public void enterRoom(String nickName, String roomName) {
+        chatRoomDaoIm.enterRoom(nickName, roomName);
+    }/////////////////// enterRoom
+
+    public void saveMsg(String msg, String mem_ip, String roomName) {
+        msgDaoIm.insertMsg(msg, mem_ip, roomName); // 메세지 저장
+    }/////////////////// saveMsg
 
     public void broadcastMsg(String protocolName, String roomName) {
-        List<String> joinMemList = memDao.getJoinMemList(roomName);  // 그룹에 입장한 회원리스트
-        List<String> msgList = msgDao.getMsgList(roomName);          // 그룹에 저장된 메세지리스트
+        List<String> joinMemList = memDaoIm.getJoinMemList(roomName);  // 그룹에 입장한 회원리스트
+        List<String> msgList = msgDaoIm.getMsgList(roomName);          // 그룹에 저장된 메세지리스트
 
         for (String nick : joinMemList) {
             if (clientInfoMap.containsKey(nick)) {
@@ -79,27 +100,18 @@ public class ServerDataMng {
         }
     }
 
-    public void enterRoom(String nickName, String roomName) {
-        chatRoomDao.enterRoom(nickName, roomName);
-    }/////////////////// enterRoom
-
-
-    public void saveMsg(String msg, String mem_ip, String roomName) {
-        memDao.insertMem(msg, mem_ip, roomName); // 메세지 저장
-    }/////////////////// saveMsg
-
-    public int crudSQL(String command, String mem_ip, String nickName) {
+    public int crudSQL(String command, String mem_ip, String nickName, String pw) {
         switch (command) {
             case "insert" -> {
-                memDao.insertMem(mem_ip, nickName,null);
+                memDaoIm.insertMem(mem_ip, nickName, pw);
                 return 1;
             }
             case "delete" -> {
-                memDao.deleteMem(nickName, mem_ip);
+                memDaoIm.deleteMem(nickName, pw);
                 return 1;
             }
             case "update" -> {
-                memDao.updateMem(mem_ip, nickName);
+                memDaoIm.updateMem(mem_ip, nickName, pw);
                 return 1;
             }
             default -> {

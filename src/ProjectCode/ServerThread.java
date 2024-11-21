@@ -1,5 +1,6 @@
 package ProjectCode;
 
+import javax.swing.JOptionPane;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -13,6 +14,7 @@ public class ServerThread implements Runnable {
     String roomName;
     String createMsg;
     String[] strings;
+    int loginTF;
 
     // 선언부 | Class
     public ServerMain sm = null;
@@ -36,17 +38,28 @@ public class ServerThread implements Runnable {
             inStream = new ObjectInputStream(clientSocket.getInputStream());
             System.out.println("입출력 Stream 객체 생성 | " + clientSocket);
 
+            String msg = (String) inStream.readObject(); //클라이언트로부터 메시지 수신
             // 조건문을 통해서 nick이 없으면 join 후에 입장
             // nick이 있으면 그냥 입장
             // if (로그인 체크 넣어서 비교 있으면 JO어쩌구 해서띄우고)
             // else (체크 해서 crudSQL join넣어서 로그인)
-            String msg = (String) inStream.readObject(); //클라이언트로부터 메시지 수신
-            StringTokenizer stz = new StringTokenizer(msg, "#"); //메시지에서 닉네임 추출
-            stz.nextToken(); //미정, 사용자 대화 받아오기 프로토콜 부분 스킵
-            nickName = stz.nextToken(); //닉네임 가져오기
+            loginTF = sdm.loginCheck(nickName, strings[1], outStream);
+            if (loginTF == 0) {
+                JOptionPane.showMessageDialog(null,"닉네임이 있습니다. 다시 적어주세요.");
+            }
+            else if (loginTF == 1) {
+                msg = (String) inStream.readObject(); //클라이언트로부터 메시지 수신
+                StringTokenizer stz = new StringTokenizer(msg, "#"); //메시지에서 닉네임 추출
+                stz.nextToken(); //미정, 사용자 대화 받아오기 프로토콜 부분 스킵
+                nickName = stz.nextToken(); //닉네임 가져오기
+                sm.jta_log.append(nickName + " 입장\n" + sm.setDays() + "\n"); //입장시 나오는 문구
+                sdm.crudSQL("insert", mem_ip, nickName,null);
+            }
+//            StringTokenizer stz = new StringTokenizer(msg, "#"); //메시지에서 닉네임 추출
+//            stz.nextToken(); //미정, 사용자 대화 받아오기 프로토콜 부분 스킵
+//            nickName = stz.nextToken(); //닉네임 가져오기
 
-            sm.jta_log.append(nickName + " 입장\n" + sm.setDays() + "\n"); //입장시 나오는 문구
-
+//            sm.jta_log.append(nickName + " 입장\n" + sm.setDays() + "\n"); //입장시 나오는 문구
 
             // 스레드 동작 처리
             while (true) {
@@ -63,8 +76,6 @@ public class ServerThread implements Runnable {
                 String[] strArray = msg.split("#", 2);
                 String command = strArray[0];
                 String content = strArray[1];
-                System.out.println("확인" + command);
-                System.out.println("컨 확인" + content);
 
                 // 프로토콜에 따른 서버 동작 실행
                 switch (command) {
@@ -75,6 +86,7 @@ public class ServerThread implements Runnable {
                     case "Create":      /// 그룹창 생성
 //                        sm.jta_log.append(sm.setDays() + "\n");
                         createMsg = ">>[" + content + "]에 입장하였습니다.";
+
                         // 그룹 생성 | 중복이 아니면 1, 중복이면 0 반환
                         if (sdm.createRoom(mem_ip, nickName, content, createMsg) == 0) {
                             outStream.writeObject("MsgGroup#동일한 그룹이 이미 존재합니다.");
@@ -93,7 +105,7 @@ public class ServerThread implements Runnable {
                         sm.jta_log.append(sm.setDays() + "\n");
                         strings = content.split("/", 2);
                         mem_ip = clientSocket.getInetAddress().getHostAddress();
-                        if (sdm.crudSQL("insert", mem_ip, strings[0]) == 0) {
+                        if (sdm.crudSQL("insert", mem_ip, strings[0], strings[1]) == 0) {
                             outStream.writeObject("MsgSQL#가입된 IP주소 입니다!");
                         } else {
                             outStream.writeObject("MsgSQL#가입이 완료되었습니다.");
@@ -101,15 +113,23 @@ public class ServerThread implements Runnable {
                         break;
                     case "Update":
                         strings = content.split("/", 2);
-                        if (sdm.crudSQL("update", mem_ip, strings[0]) == 1) {
+                        if (sdm.crudSQL("update", mem_ip, strings[0], strings[1]) == 1) {
                             outStream.writeObject("MsgSQL#닉네임이 변경되었습니다.");
                         }
                         break;
                     case "Delete":
                         strings = content.split("/", 2);
-                        if (sdm.crudSQL("delete", mem_ip, strings[0]) == 1) {
+                        if (sdm.crudSQL("delete", mem_ip, strings[0], strings[1]) == 1) {
                             outStream.writeObject("MsgSQL#닉네임이 삭제되었습니다.");
                         }
+                        break;
+                    case "LoginCheck":
+                        strings = content.split("/", 2);
+                        nickName = strings[0];
+                        mem_ip = sdm.getIP(strings[0]);
+                        loginTF = sdm.loginCheck(nickName, strings[1], outStream);
+                        if(loginTF == 1) {sdm.broadcastRoomList("RoomList#");}
+                        outStream.writeObject("LoginCheck#" + loginTF);
                         break;
                 }
             }
