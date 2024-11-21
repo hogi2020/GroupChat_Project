@@ -1,17 +1,11 @@
 package ProjectCode;
 
-import ProjectDBCode.ServerDataMng;
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Calendar;
-import java.util.List;
-import java.util.Vector;
 
 public class ServerMain extends JFrame {
     // 선언부

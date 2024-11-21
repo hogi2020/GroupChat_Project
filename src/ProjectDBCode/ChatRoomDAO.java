@@ -3,6 +3,7 @@ package ProjectDBCode;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class ChatRoomDAO implements ChatDAO {
     private final DBConnectionMgr dbMgr;
@@ -19,7 +20,8 @@ public class ChatRoomDAO implements ChatDAO {
         int num = -1;
         String[] sqls = {
                 "select count(*) from talk_room where talk_room_name = ?",
-                "insert into talk_room values (talk_room_seq.nextval,?)"};
+                "insert into talk_room values (talk_room_seq.nextval,?)"
+        };
         try {
             conn = dbMgr.getConnection();
             pstm = conn.prepareStatement(sqls[0]);
@@ -55,6 +57,8 @@ public class ChatRoomDAO implements ChatDAO {
         try {
             conn = dbMgr.getConnection();
             pstm = conn.prepareStatement(sql);
+            pstm.setString(1, nickName);
+            pstm.setString(2, roomName);
             num = pstm.executeUpdate();
 
         }
@@ -70,7 +74,7 @@ public class ChatRoomDAO implements ChatDAO {
 
     @Override
     public Map<String, String> getRoomMap() {
-        Map<String, String> roomMap = new HashMap<>();
+        Map<String, String> roomMap = new ConcurrentHashMap<>();
         String sql = "select * from talk_room";
 
         try{

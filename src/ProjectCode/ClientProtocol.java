@@ -9,11 +9,11 @@ import java.net.Socket;
 public class ClientProtocol implements Runnable {
     // 클라이언트 소켓, 입출력 스트림 선언
     private Socket clientSocket = null;
-    ObjectInputStream in = null;
+    private ObjectInputStream in = null;
     private ObjectOutputStream out = null;
+    private UIMain cui = null;
     ServerMain sm = new ServerMain();
     String msg = null;
-    private UIMain cui = null;
 
 
     // 생성자 생성
@@ -41,7 +41,7 @@ public class ClientProtocol implements Runnable {
 
     // 프로토콜에 따른 입력스트림 처리
     @Override
-    public void run() { //200 : 입장, 300 : 나가기, 방목록 : 400, 방 변경 : 401,
+    public void run() {
         try {
             while((msg = (String) in.readObject()) != null) {
                 System.out.println("수신정보 | " + msg);
@@ -58,6 +58,9 @@ public class ClientProtocol implements Runnable {
                     cui.ui.updateRoomList(content.split(","));
 
                 } else if (protocol.equals("Join")) {
+                    cui.ui.displayMsg(content);
+                }
+                else if (protocol.equals("Enter")) {
                     cui.ui.displayMsg(content);
                 }
             }

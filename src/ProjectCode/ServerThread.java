@@ -1,8 +1,5 @@
 package ProjectCode;
 
-
-import ProjectDBCode.ServerDataMng;
-
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -39,12 +36,16 @@ public class ServerThread implements Runnable {
             inStream = new ObjectInputStream(clientSocket.getInputStream());
             System.out.println("입출력 Stream 객체 생성 | " + clientSocket);
 
+            // 조건문을 통해서 nick이 없으면 join 후에 입장
+            // nick이 있으면 그냥 입장
+            // if (로그인 체크 넣어서 비교 있으면 JO어쩌구 해서띄우고)
+            // else (체크 해서 crudSQL join넣어서 로그인)
             String msg = (String) inStream.readObject(); //클라이언트로부터 메시지 수신
-            sm.jta_log.append(nickName + " 입장\n" + sm.setDays() + "\n"); //입장시 나오는 문구
-
             StringTokenizer stz = new StringTokenizer(msg, "#"); //메시지에서 닉네임 추출
             stz.nextToken(); //미정, 사용자 대화 받아오기 프로토콜 부분 스킵
             nickName = stz.nextToken(); //닉네임 가져오기
+
+            sm.jta_log.append(nickName + " 입장\n" + sm.setDays() + "\n"); //입장시 나오는 문구
 
 
             // 스레드 동작 처리
@@ -62,6 +63,8 @@ public class ServerThread implements Runnable {
                 String[] strArray = msg.split("#", 2);
                 String command = strArray[0];
                 String content = strArray[1];
+                System.out.println("확인" + command);
+                System.out.println("컨 확인" + content);
 
                 // 프로토콜에 따른 서버 동작 실행
                 switch (command) {

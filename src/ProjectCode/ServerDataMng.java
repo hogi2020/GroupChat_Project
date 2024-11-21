@@ -1,4 +1,4 @@
-package ProjectDBCode;
+package ProjectCode;
 
 import ProjectDBCode.*;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class ServerDataMng {
     MemberDAO memDao;
     MessageDAO msgDao;
     ConcurrentHashMap<String, List<ObjectOutputStream>> roomMsgMap;    // RoomName, ClientList
-    public ConcurrentHashMap<String, ObjectOutputStream> clientInfoMap;    // nickName, OutputStream
+    ConcurrentHashMap<String, ObjectOutputStream> clientInfoMap;    // nickName, OutputStream
 
     // 생성자
     public ServerDataMng() {
@@ -37,7 +37,7 @@ public class ServerDataMng {
         if (chatRoomDao.insertRoom(roomName) == 1) {
             roomMsgMap.put(roomName, new CopyOnWriteArrayList<>());
             chatRoomDao.enterRoom(nickName, roomName);
-            memDao.insertMem(createMsg, mem_ip, roomName);
+            msgDao.insertMsg(createMsg, mem_ip, roomName);
             return 1;
         } else {
             return 0;

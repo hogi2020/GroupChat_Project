@@ -20,7 +20,7 @@ public class MemberDAO implements MemDAO {
     }
 
     @Override
-    public void insertMem(String mem_ip, String mem_nick, String msg) {
+    public void insertMem(String mem_ip, String mem_nick, String pw) {
         String sql = "insert into member values (?,?,?,?)";
 
         try{
@@ -30,7 +30,7 @@ public class MemberDAO implements MemDAO {
             pstm.setString(1, mem_ip);
             pstm.setString(2, mem_nick);
             pstm.setString(3, null);
-            pstm.setString(4, msg);
+            pstm.setString(4, pw);
             pstm.executeUpdate();
         }
         catch (SQLException e) {
