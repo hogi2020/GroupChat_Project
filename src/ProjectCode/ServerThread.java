@@ -38,22 +38,30 @@ public class ServerThread implements Runnable {
             inStream = new ObjectInputStream(clientSocket.getInputStream());
             System.out.println("입출력 Stream 객체 생성 | " + clientSocket);
 
-            String msg = (String) inStream.readObject(); //클라이언트로부터 메시지 수신
+            String nick = (String) inStream.readObject(); //클라이언트로부터 메시지 수신
+            if (nick != null && nick.contains("#")) {
+                String[] parts = nick.split("#");
+                if (parts.length > 1) {
+                    nickName = parts[1];
+                }
+            }
             // 조건문을 통해서 nick이 없으면 join 후에 입장
             // nick이 있으면 그냥 입장
             // if (로그인 체크 넣어서 비교 있으면 JO어쩌구 해서띄우고)
             // else (체크 해서 crudSQL join넣어서 로그인)
-            loginTF = sdm.loginCheck(nickName, strings[1], outStream);
+            loginTF = sdm.loginCheck(nickName, null, outStream);
             if (loginTF == 0) {
-                JOptionPane.showMessageDialog(null,"닉네임이 있습니다. 다시 적어주세요.");
+//                JOptionPane.showMessageDialog(null,"닉네임이 있습니다. 다시 적어주세요.");
+                outStream.writeObject("Error#닉네임이 중복입니다.");
+
             }
-            else if (loginTF == 1) {
-                msg = (String) inStream.readObject(); //클라이언트로부터 메시지 수신
-                StringTokenizer stz = new StringTokenizer(msg, "#"); //메시지에서 닉네임 추출
-                stz.nextToken(); //미정, 사용자 대화 받아오기 프로토콜 부분 스킵
-                nickName = stz.nextToken(); //닉네임 가져오기
+            else {
                 sm.jta_log.append(nickName + " 입장\n" + sm.setDays() + "\n"); //입장시 나오는 문구
                 sdm.crudSQL("insert", mem_ip, nickName,null);
+//                nick = (String) inStream.readObject(); //클라이언트로부터 메시지 수신
+//                StringTokenizer stz = new StringTokenizer(nick, "#"); //메시지에서 닉네임 추출
+//                stz.nextToken(); //미정, 사용자 대화 받아오기 프로토콜 부분 스킵
+//                nickName = stz.nextToken(); //닉네임 가져오기
             }
 //            StringTokenizer stz = new StringTokenizer(msg, "#"); //메시지에서 닉네임 추출
 //            stz.nextToken(); //미정, 사용자 대화 받아오기 프로토콜 부분 스킵
@@ -63,17 +71,17 @@ public class ServerThread implements Runnable {
 
             // 스레드 동작 처리
             while (true) {
-                msg = (String) inStream.readObject();
-                if (msg == null) break;
-                sm.jta_log.append(msg + "\n");
+                nick = (String) inStream.readObject();
+                if (nick == null) break;
+                sm.jta_log.append(nick + "\n");
                 sm.jta_log.setCaretPosition(sm.jta_log.getDocument().getLength()); //대화 내용 전부 가져오는 코드
-                StringTokenizer stz2 = new StringTokenizer(msg, "#");
+                StringTokenizer stz2 = new StringTokenizer(nick, "#");
                 int pro = 0; //
-                System.out.println("스레드 동작 | " + msg);
+                System.out.println("스레드 동작 | " + nick);
 //                pdao.insertMem(clientIP, nickName, null); //DB에 닉네임과 IP저장
 
                 // 프로토콜 & 컨텐츠 분리
-                String[] strArray = msg.split("#", 2);
+                String[] strArray = nick.split("#", 2);
                 String command = strArray[0];
                 String content = strArray[1];
 

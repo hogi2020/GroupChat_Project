@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file.">
-      <change afterPath="$PROJECT_DIR$/src/ProjectDBCode/ChatRoomDAO_Im.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProjectDBCode/MemberDAO_Im.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProjectDBCode/MessageDAO_Im.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/ChatDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/ChatRoomDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/ChatRoomDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/DBConnectionMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MemDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MessageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/MessageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MsgDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectDBCode/MemberDAO_Im.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectDBCode/MemberDAO_Im.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +108,7 @@
     &quot;git-widget-placeholder&quot;: &quot;kim__min__tae&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/KOSMO/Downloads/ohChat_v3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GroupChat_Project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -245,7 +236,7 @@
       <recent name="Notice" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.UIMain">
+  <component name="RunManager" selected="애플리케이션.ServerMain">
     <configuration name="ClientUI" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="originCode.ClientUI" />
       <module name="GroupChat_Project" />
@@ -319,8 +310,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.UIMain" />
         <item itemvalue="애플리케이션.ServerMain" />
+        <item itemvalue="애플리케이션.UIMain" />
         <item itemvalue="애플리케이션.ClientUI" />
         <item itemvalue="애플리케이션.ProjectDAO" />
         <item itemvalue="애플리케이션.MsgSave" />
@@ -351,6 +342,8 @@
       <workItem from="1732167303443" duration="9356000" />
       <workItem from="1732201525369" duration="1516000" />
       <workItem from="1732203062654" duration="117000" />
+      <workItem from="1732237326521" duration="4654000" />
+      <workItem from="1732267631457" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="update day4 java file.">
       <option name="closed" value="true" />

@@ -82,7 +82,7 @@ public class MemberDAO_Im implements MemberDAO {
 
     @Override
     public int loginCheck(String nickName, int pw) {
-        int num = 0;
+        int num = 1;
 
         try {
             // 1. 데이터베이스 연결
