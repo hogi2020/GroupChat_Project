@@ -26,7 +26,7 @@ public class ClientProtocol implements Runnable {
     // 서버 연결
     public void connectToServer() {
         try {
-            clientSocket = new Socket("localhost", 3000);
+            clientSocket = new Socket("localhost", 9000);
             in = new ObjectInputStream(clientSocket.getInputStream());
             out = new ObjectOutputStream(clientSocket.getOutputStream());
             sm.jta_log.append("Connect to Server\n" + sm.setDays());

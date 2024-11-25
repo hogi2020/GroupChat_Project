@@ -30,7 +30,8 @@ public class ServerDataMng {
 
     public int loginCheck(String nickName, String pw, ObjectOutputStream outStream) {
         // 로그인 성공 시 1 반환, 실패 시 0 반환
-        int password = 1;
+        String fixedPassword = "1234";
+        int password = Integer.parseInt(fixedPassword);
         if(memDaoIm.loginCheck(nickName, password) == 1) {
             // 로그인에 성공하면 ClientList에 Outstream 추가
             clientInfoMap.put(nickName, outStream);

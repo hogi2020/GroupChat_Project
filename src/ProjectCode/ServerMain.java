@@ -20,7 +20,7 @@ public class ServerMain extends JFrame {
     // 서버 실행 및 클라이언트 접속
     public void ServerStart() {
 
-        try(ServerSocket ss = new ServerSocket(3000)) {
+        try(ServerSocket ss = new ServerSocket(9000)) {
             jta_log.append("Ready to Server " + this.setDays() + "\n");
 
             // 채팅데이터 관리를 위한 Map 객체 생성
