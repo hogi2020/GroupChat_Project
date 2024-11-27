@@ -59,7 +59,7 @@ public class ChatRoomDAO_Im implements ChatRoomDAO {
             num = pstm.executeUpdate();
         }
         catch (SQLException e) {
-            System.out.println("nsertRoom Exception : " + e.getMessage());
+            System.out.println("EnterRoom Exception : " + e.getMessage());
         }
         finally {
             dbMgr.freeConnection(conn, pstm, rs);
