@@ -13,6 +13,7 @@ public class ServerDataMng {
     MemberDAO_Im memDaoIm;
     MessageDAO_Im msgDaoIm;
     ChatRoomDAO_Im chatRoomDaoIm;
+    ConcurrentHashMap<String, String> clientRoomMap;    // nickName, roomName
     ConcurrentHashMap<String, List<ObjectOutputStream>> roomMsgMap;    // RoomName, ClientList
     ConcurrentHashMap<String, ObjectOutputStream> clientInfoMap;    // nickName, OutputStream
 
@@ -22,6 +23,7 @@ public class ServerDataMng {
         msgDaoIm = new MessageDAO_Im();
         chatRoomDaoIm = new ChatRoomDAO_Im();
 
+        clientRoomMap = new ConcurrentHashMap<>();
         roomMsgMap = new ConcurrentHashMap<>();
         clientInfoMap = new ConcurrentHashMap<>();
     }/////////////// ServerDataMng
@@ -75,6 +77,7 @@ public class ServerDataMng {
     }//////////////// broadcastRoomList
 
     public void enterRoom(String nickName, String roomName) {
+        clientRoomMap.put(nickName, roomName);
         chatRoomDaoIm.enterRoom(nickName, roomName);
     }/////////////////// enterRoom
 
@@ -87,7 +90,7 @@ public class ServerDataMng {
         List<String> msgList = msgDaoIm.getMsgList(roomName);          // 그룹에 저장된 메세지리스트
 
         for (String nick : joinMemList) {
-            if (clientInfoMap.containsKey(nick)) {
+            if (clientInfoMap.containsKey(nick) && clientRoomMap.get(nick) == roomName) {
                 try {
                     clientInfoMap.get(nick).writeObject("Reset#");
                     for (String msg : msgList) {

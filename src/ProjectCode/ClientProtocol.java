@@ -26,7 +26,7 @@ public class ClientProtocol implements Runnable {
     // 서버 연결
     public void connectToServer() {
         try {
-            clientSocket = new Socket("localhost", 9000);
+            clientSocket = new Socket("192.168.0.36", 9000);
             in = new ObjectInputStream(clientSocket.getInputStream());
             out = new ObjectOutputStream(clientSocket.getOutputStream());
             sm.jta_log.append("Connect to Server\n" + sm.setDays());
@@ -63,6 +63,10 @@ public class ClientProtocol implements Runnable {
                 else if (protocol.equals("Enter")) {
                     cui.ui.displayMsg(content);
                 }
+                else if (protocol.equals("Reset")) {
+                    cui.ui.msg_display.setText("");
+                }
+
             }
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
