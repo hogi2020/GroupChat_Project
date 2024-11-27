@@ -15,18 +15,16 @@ public class ClientProtocol implements Runnable {
     ServerMain sm = new ServerMain();
     String msg = null;
 
-
     // 생성자 생성
     public ClientProtocol(UIMain cui) {
         this.cui = cui;
         connectToServer();
     }
 
-
     // 서버 연결
     public void connectToServer() {
         try {
-            clientSocket = new Socket("localhost", 9000);
+            clientSocket = new Socket("localhost", 9000); //192.168.0.36
             in = new ObjectInputStream(clientSocket.getInputStream());
             out = new ObjectOutputStream(clientSocket.getOutputStream());
             sm.jta_log.append("Connect to Server\n" + sm.setDays());
@@ -36,8 +34,6 @@ public class ClientProtocol implements Runnable {
             e.printStackTrace();
         }
     }
-
-
 
     // 프로토콜에 따른 입력스트림 처리
     @Override
@@ -63,6 +59,9 @@ public class ClientProtocol implements Runnable {
                 else if (protocol.equals("Enter")) {
                     cui.ui.displayMsg(content);
                 }
+                else if (protocol.equals("Reset")) {
+                    cui.ui.msg_display.setText("");
+                }
             }
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -74,8 +73,6 @@ public class ClientProtocol implements Runnable {
             }
         }
     }
-
-
 
     // 클라이언트-서버 출력스트림 메서드
     public String sendMsg(String msg) {

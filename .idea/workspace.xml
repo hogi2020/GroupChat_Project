@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ClientProtocol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerDataMng.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectCode/ServerThread.java" afterDir="false" />
     </list>
@@ -33,12 +34,12 @@
     &quot;assignee&quot;: &quot;hogi2020&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:hogi2020/GroupChat_Project.git",
-    "accountId": "2bc07bb5-096c-42cc-9439-2998e8ab66c1"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hogi2020/GroupChat_Project.git&quot;,
+    &quot;accountId&quot;: &quot;dea8166b-fb01-4afc-ad45-e39ecc802346&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -106,10 +107,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "kim__min__tae",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/GroupChat_Project",
+    "last_opened_file_path": "C:/Users/KOSMO/Desktop/GroupChat_Project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -237,7 +238,7 @@
       <recent name="Notice" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="애플리케이션.UIMain">
     <configuration name="ClientUI" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="originCode.ClientUI" />
       <module name="GroupChat_Project" />
@@ -309,6 +310,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.UIMain" />
+        <item itemvalue="애플리케이션.ServerMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -331,6 +346,8 @@
       <workItem from="1732498227114" duration="2256000" />
       <workItem from="1732501517568" duration="11718000" />
       <workItem from="1732668542770" duration="2312000" />
+      <workItem from="1732685624964" duration="17000" />
+      <workItem from="1732685649167" duration="8359000" />
     </task>
     <task id="LOCAL-00001" summary="update day4 java file.">
       <option name="closed" value="true" />
