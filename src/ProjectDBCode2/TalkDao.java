@@ -1,4 +1,4 @@
-package ProjectCode;
+package ProjectDBCode2;
 
 import ProjectDBCode.DBConnectionMgr;
 
@@ -13,7 +13,7 @@ public class
 
 TalkDao {
     // DB 연결 관리 객체
-    DBConnectionMgr dbMgr = DBConnectionMgr.getInstance();
+    DBConnectionMgrJS dbMgr = DBConnectionMgrJS.getInstance();
     Connection conn = null;
     PreparedStatement pstmt = null;
     ResultSet rs = null;
@@ -67,7 +67,7 @@ TalkDao {
 
         try {
             // 메시지 삽입 SQL
-            sql_sendMsg.append("INSERT INTO chat_messages (sender, receiver, messages) ");
+            sql_sendMsg.append("INSERT INTO chat_messages (sender, receiver, message) ");
             sql_sendMsg.append("VALUES (?, ?, ?)");
             conn = dbMgr.getConnection();
             pstmt = conn.prepareStatement(sql_sendMsg.toString());

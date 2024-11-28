@@ -71,7 +71,7 @@ public class ClientUI extends JFrame implements ActionListener {
 
         // 동작 시, 메세지 전송 (공란이 아닐 경우)
         if (!outMsg.isEmpty()) {
-            op.sendMsg("MsgSend#" + outMsg);  // 메세지 보내기
+            op.sendMsg("MsgSend#" + " " + outMsg);  // 메세지 보내기
             txt_field.setText("");            // 텍스트필드 초기화
             txt_area.setText("");             // 텍스트Area 초기화
 

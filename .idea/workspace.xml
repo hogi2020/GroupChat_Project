@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file." />
+    <list default="true" id="45186895-8175-4e44-a843-609480858a49" name="변경" comment="update day4 java file.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
+        <option value="Python Script" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -30,7 +33,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:hogi2020/basic1.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:hogi2020/GroupChat_Project.git&quot;,
     &quot;accountId&quot;: &quot;2bc07bb5-096c-42cc-9439-2998e8ab66c1&quot;
   }
 }</component>
@@ -87,25 +90,34 @@
     &quot;Application.OracleConnection3.executor&quot;: &quot;Run&quot;,
     &quot;Application.PC3Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.PCMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerMain.executor&quot;: &quot;Run&quot;,
     &quot;Application.Table1.executor&quot;: &quot;Run&quot;,
     &quot;Application.Table2.executor&quot;: &quot;Run&quot;,
     &quot;Application.TalkDao.executor&quot;: &quot;Run&quot;,
     &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
     &quot;Application.This1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UIMain.executor&quot;: &quot;Run&quot;,
     &quot;Application.ZipCodeSearchForm.executor&quot;: &quot;Run&quot;,
     &quot;Application.prac.executor&quot;: &quot;Run&quot;,
     &quot;Application.quiz.step1.DeptMain.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workSpaceJava/basic1/lib/gson-2.8.9.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GroupChat_Project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;애플리케이션.A.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.A1.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.AMain.executor&quot;: &quot;Run&quot;,
@@ -120,6 +132,7 @@
     &quot;애플리케이션.C.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.CarCreate.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.Casting1.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.ClientUI.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.D.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.DeptMain.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.E.executor&quot;: &quot;Run&quot;,
@@ -146,6 +159,8 @@
     &quot;애플리케이션.M.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.M1.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.MemberMain.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.MsgSave (1).executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.MsgSave.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.MultiServer.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.N.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.N1.executor&quot;: &quot;Run&quot;,
@@ -162,6 +177,7 @@
     &quot;애플리케이션.Oper4.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.Parameter1.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.Pride.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.ProjectDAO.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.Q27.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.Q27_1.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.Q28.executor&quot;: &quot;Run&quot;,
@@ -179,6 +195,7 @@
     &quot;애플리케이션.Runtime.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.SampleClient.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.SampleServer.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.ServerMain.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.SomeObject.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.StringTest2.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.StringTest3.executor&quot;: &quot;Run&quot;,
@@ -195,6 +212,7 @@
     &quot;애플리케이션.TimeServer2.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.TimeView.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.TryCatch.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.UIMain.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.XxxMain.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.XxxSub.executor&quot;: &quot;Run&quot;,
     &quot;애플리케이션.talk.step1.KiwiLogin.executor&quot;: &quot;Run&quot;
@@ -217,13 +235,13 @@
       <recent name="Notice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BookApp">
-    <configuration name="BookApp" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.book.BookApp" />
-      <module name="basic1" />
+  <component name="RunManager" selected="Application.UIMain">
+    <configuration name="ClientUI" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="originCode.ClientUI" />
+      <module name="GroupChat_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.book.*" />
+          <option name="PATTERN" value="originCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -231,12 +249,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.book.BookDaoTest" />
-      <module name="basic1" />
+    <configuration name="MsgSave" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectDBCode2.MsgSave" />
+      <module name="GroupChat_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.book.*" />
+          <option name="PATTERN" value="ProjectDBCode2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -244,12 +262,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookVOTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.book.BookVOTest" />
-      <module name="basic1" />
+    <configuration name="ProjectDAO" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectDBCode.ProjectDAO" />
+      <module name="GroupChat_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.book.*" />
+          <option name="PATTERN" value="ProjectCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -257,12 +275,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OracleConnection01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jdbc.step2.OracleConnection01" />
-      <module name="basic1" />
+    <configuration name="ServerMain" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectCode.ServerMain" />
+      <module name="GroupChat_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbc.step2.*" />
+          <option name="PATTERN" value="ProjectDBCode2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -270,12 +288,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Table2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.database.Table2" />
-      <module name="basic1" />
+    <configuration name="UIMain" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectCode.UIMain" />
+      <module name="GroupChat_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes.database.*" />
+          <option name="PATTERN" value="ProjectDBCode2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -291,11 +309,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BookApp" />
-        <item itemvalue="Application.BookDaoTest" />
-        <item itemvalue="Application.BookVOTest" />
-        <item itemvalue="Application.Table2" />
-        <item itemvalue="Application.OracleConnection01" />
+        <item itemvalue="Application.UIMain" />
+        <item itemvalue="Application.ServerMain" />
       </list>
     </recent_temporary>
   </component>
@@ -307,6 +322,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728379495742</updated>
+      <workItem from="1731578593358" duration="758000" />
+      <workItem from="1731899997532" duration="15096000" />
+      <workItem from="1732080703549" duration="10505000" />
+      <workItem from="1732104577683" duration="405000" />
+      <workItem from="1732152454255" duration="1040000" />
+      <workItem from="1732167303443" duration="9356000" />
+      <workItem from="1732201525369" duration="1516000" />
+      <workItem from="1732203062654" duration="117000" />
+      <workItem from="1732237326521" duration="4654000" />
+      <workItem from="1732267631457" duration="18000" />
+      <workItem from="1732498227114" duration="2256000" />
+      <workItem from="1732501517568" duration="11718000" />
+      <workItem from="1732668542770" duration="2312000" />
     </task>
     <task id="LOCAL-00001" summary="update day4 java file.">
       <option name="closed" value="true" />
@@ -318,6 +346,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update day4 java file." />

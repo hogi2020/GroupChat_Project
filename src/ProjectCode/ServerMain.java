@@ -2,19 +2,13 @@ package ProjectCode;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Calendar;
-import java.util.List;
-import java.util.Vector;
 
-public class ServerMain extends JFrame implements ActionListener {
+public class ServerMain extends JFrame {
     // 선언부
-    ServerThread st = null;
-    List<ServerThread> stl = null;
     Socket clientSocket;
     ServerDataMng sdm;
 
@@ -25,8 +19,8 @@ public class ServerMain extends JFrame implements ActionListener {
 
     // 서버 실행 및 클라이언트 접속
     public void ServerStart() {
-        stl = new Vector<>();
-        try(ServerSocket ss = new ServerSocket(3000)) {
+
+        try(ServerSocket ss = new ServerSocket(9000)) {
             jta_log.append("Ready to Server " + this.setDays() + "\n");
 
             // 채팅데이터 관리를 위한 Map 객체 생성
@@ -39,10 +33,11 @@ public class ServerMain extends JFrame implements ActionListener {
                 System.out.println("클라이언트 접속 | " + clientSocket.getInetAddress());
 
                 // ServerThread 클래스의 run()스레드 생성
-                new Thread(new ServerThread(clientSocket, sdm, this)).start();
+                new Thread(new ServerThread(clientSocket, sdm, this)).start(); //pdao
             }
         } catch (IOException e) {
             System.out.println("서버 작동 중 오류 발생: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -54,7 +49,7 @@ public class ServerMain extends JFrame implements ActionListener {
 
         this.add("South",jp_north);
         this.add("Center",jsp_log);
-        this.setSize(700, 600);
+        this.setSize(700, 500);
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
@@ -76,10 +71,5 @@ public class ServerMain extends JFrame implements ActionListener {
         ServerMain sm = new ServerMain();
         sm.initDisplay();
         sm.ServerStart();
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
     }
 }
