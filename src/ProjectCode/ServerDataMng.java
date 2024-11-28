@@ -90,7 +90,8 @@ public class ServerDataMng {
         List<String> msgList = msgDaoIm.getMsgList(roomName);          // 그룹에 저장된 메세지리스트
 
         for (String nick : joinMemList) {
-            if (clientInfoMap.containsKey(nick) && clientRoomMap.get(nick) == roomName) {
+            if (clientInfoMap.containsKey(nick) && clientRoomMap.get(nick).equals(roomName)) {
+                System.out.println("msg Nick : " + nick);
                 try {
                     clientInfoMap.get(nick).writeObject("Reset#");
                     for (String msg : msgList) {
