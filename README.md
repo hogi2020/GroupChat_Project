@@ -13,7 +13,7 @@
     - 클라이언트와 서버 간 통신
     - 사용자별 닉네임 설정
     - 메시지 전송 시 TimeStamp 표시
-    - 메시지 알림 기능 | (이거 할 수 있나???)
+    - 메시지 알림 기능
 
 ---
 
@@ -79,16 +79,8 @@
 ---
 
 #### 6. **기대 효과**
-- Java 기반의 실시간 채팅 프로그램을 통해 네트워크 프로그래밍 및 GUI 개발 역량을 강화.
+- Java 기반의 실시간 채팅 프로그램을 통해 네트워크 프로그래밍 개발 역량을 강화.
 - 실제 응용 가능한 단체 채팅 프로그램 개발로 사용자 간의 원활한 의사소통 도구 제공.
-  
----
-
-#### 7. **추가 고려사항**
-- **보안**: 데이터 암호화 및 안전한 연결 보장을 위한 SSL/TLS 적용 검토.
-- **확장성**: 추후 파일 전송, 사용자 프로필 설정, 방 만들기 등의 추가 기능을 고려.
-
-**Project Management Link :** [Chat Project TimeLine Link | Click!!!](https://docs.google.com/spreadsheets/d/1IYySTJvefOVfoQwdsIm4xq4j5l2pxkdAC0cG4n1HPgk/edit?usp=sharing)
 
 <br />
 
